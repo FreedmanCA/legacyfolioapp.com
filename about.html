@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <title>LegacyFolio | About</title>
+    <link rel="canonical" href="https://legacyfolioapp.com/about.html">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon-96x96.png" type="image/png" sizes="96x96">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <meta name="description" content="About LegacyFolio: Developed by Nekudot&nbsp;Design&nbsp;Limited. Learn more about the private estate-information app for iPhone, iPad, and Mac.">
+    <meta property="og:title" content="LegacyFolio | About">
+    <meta property="og:description" content="Legal information for LegacyFolio, your private and secure Folio of information, documents, and wishes.">
+    <meta property="og:image" content="https://legacyfolioapp.com/OGImage.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="LegacyFolio">
+    <meta property="og:url" content="https://legacyfolioapp.com/about.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LegacyFolio | About">
+    <meta name="twitter:description" content="Legal information for LegacyFolio, your private and secure Folio of information, documents, and wishes.">
+    <meta name="twitter:image" content="https://legacyfolioapp.com/OGImage.webp">
+
+    <link rel="stylesheet" href="shared.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-family);
+            color: var(--text-main);
+            background-color: #ffffff;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Nav, hamburger menu, and mobile overlay are in shared.css */
+
+        /* Container & Back Link */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        
+        /* App Header Section - Matches AboutView.swift */
+        .app-header {
+            margin-top: 40px;
+            margin-bottom: 32px;
+        }
+
+        .app-icon {
+            width: 100px; /* Matches frame size in Swift */
+            height: 100px;
+            border-radius: 22px; /* Matches cornerRadius in Swift */
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 16px;
+        }
+
+        .app-name {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 0 4px 0;
+        }
+
+        .version-text {
+            font-size: 17px;
+            color: var(--text-main);
+            margin: 0;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #f0f0f0;
+            margin: 32px 0;
+        }
+
+        /* Legal Content Section - Matches AboutView.swift */
+        .legal-content {
+            font-size: 17px;
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding-bottom: 20px;
+        }
+
+        .legal-text {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .legal-text a {
+            color: var(--apple-blue);
+            text-decoration: none;
+        }
+
+        .legal-text a:hover {
+            text-decoration: underline;
+        }
+
+        /* Unified Footer Navigation - Matches index.html */
+        .footer-nav {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            border-top: 1px solid #f0f0f0;
+            padding: 30px 0 60px;
+        }
+
+        /* .footer-nav a link styling is in shared.css */
+
+        /* Mobile: page-specific footer-nav layout only (nav overlay is in shared.css) */
+        @media (max-width: 768px) {
+            .footer-nav {
+                gap: 15px;
+                padding: 20px 0 40px;
+            }
+        }
+
+        /* --- NATIVE DARK MODE SUPPORT --- */
+        /* Color variables and nav dark styling are in shared.css */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #000000;
+            }
+
+            hr {
+                border-top: 1px solid #38383a;
+            }
+
+            .footer-nav {
+                border-top: 1px solid #38383a;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo-container">
+            <img src="AppIcon.png" alt="LegacyFolio Logo" class="logo-img">
+            <span>Legacy<span class="logo-folio">Folio</span>™</span>
+        </a>
+        
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+            <a href="about.html" class="current">About</a>
+            <a href="manual.html">User Guide</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <main>
+
+        <section class="app-header">
+            <img src="AppIcon.png" alt="App Icon" class="app-icon">
+            <h1 class="app-name">Legacy<span class="logo-folio">Folio</span></h1>
+            <p class="version-text">Version 1.0 (2026)</p>
+        </section>
+
+        <hr>
+
+        <section class="legal-content">
+            <div class="legal-text">
+                <p>Made by <a href="https://nekudotdesign.com" target="_blank" rel="noopener noreferrer">Nekudot&nbsp;Design&nbsp;Limited</a>  in Vancouver,&nbsp;Canada.</p>
+                <p>LegacyFolio™ is a trademark of Nekudot&nbsp;Design&nbsp;Limited.</p>
+                <p>Copyright &copy; 2026 Nekudot&nbsp;Design&nbsp;Limited. All&nbsp;Rights&nbsp;Reserved.</p>
+                <p>Use of LegacyFolio is subject to the terms of the Standard Apple Licensed Application End&nbsp;User&nbsp;License&nbsp;Agreement.</p>
+            </div>
+        </section>
+
+        </main>
+
+        <footer class="footer-nav">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="mailto:support@legacyfolioapp.com?subject=LegacyFolio%20Support%20Request">Contact Support</a>
+        </footer>
+    </div>
+
+    <script src="nav.js"></script>
+</body>
+</html>

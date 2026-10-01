@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <title>LegacyFolio | Everything they need, when they need it.</title>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon-96x96.png" type="image/png" sizes="96x96">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <meta name="description" content="LegacyFolio is a private and secure way to organize the information, documents, and wishes your loved ones, executors, and decision-makers may need. For iPhone, iPad, and Mac.">
+    <meta name="author" content="Nekudot Design Limited">
+    <link rel="canonical" href="https://legacyfolioapp.com/">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="LegacyFolio">
+    <meta property="og:title" content="LegacyFolio | Everything they need, when they need it.">
+    <meta property="og:description" content="A private and secure way to organize the information, documents, and wishes your loved ones, executors, and decision-makers may need.">
+    <meta property="og:image" content="https://legacyfolioapp.com/OGImage.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://legacyfolioapp.com/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LegacyFolio | Everything they need, when they need it.">
+    <meta name="twitter:description" content="A private and secure way to organize the information, documents, and wishes your loved ones, executors, and decision-makers may need.">
+    <meta name="twitter:image" content="https://legacyfolioapp.com/OGImage.webp">
+    <meta name="twitter:url" content="https://legacyfolioapp.com/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "LegacyFolio",
+      "url": "https://legacyfolioapp.com/",
+      "image": "https://legacyfolioapp.com/hero.webp",
+      "operatingSystem": "iOS, iPadOS, macOS",
+      "applicationCategory": "ProductivityApplication",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Free",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Full functionality with up to 10 records. No time limit."
+        }
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "Nekudot Design Limited"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nekudot Design Limited"
+      },
+      "description": "LegacyFolio is a private and secure way to organize the information, documents, and wishes your loved ones, executors, and decision-makers may need to manage your affairs and estate. LegacyFolio creates a professionally organized, password-protected PDF Folio that can be opened in any browser and updated whenever your life changes. LegacyFolio does not store your information on its own servers; your data stays on your devices and, if you choose, in your personal iCloud. One universal license covers iPhone, iPad, and Mac.",
+      "featureList": [
+        "Password-protected PDF Folio that opens in any browser",
+        "No LegacyFolio cloud and no third-party data storage",
+        "Optional private iCloud sync across iPhone, iPad, and Mac",
+        "Import information from Contacts and be alerted to changes",
+        "Reminders to review your records periodically"
+      ],
+      "softwareVersion": "1.0",
+      "inLanguage": "en"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Nekudot Design Limited",
+      "url": "https://nekudotdesign.com",
+      "logo": "https://nekudotdesign.com/logo.svg",
+      "email": "support@legacyfolioapp.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vancouver",
+        "addressRegion": "BC",
+        "addressCountry": "CA"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "email": "support@legacyfolioapp.com",
+        "availableLanguage": "English"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="shared.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-family);
+            color: var(--text-main);
+            background-color: #ffffff;
+            line-height: 1.47059;
+            font-weight: 400;
+            letter-spacing: -0.022em;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        main { overflow-x: hidden; }
+
+        .nowrap { white-space: nowrap; }
+
+        /* Nav, hamburger menu, and mobile overlay are in shared.css */
+
+        /* --- Entrance Animation --- */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px) scale(0.98); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        /* --- Hero --- */
+        .hero {
+            padding: 80px 0 40px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 0 auto;
+            gap: 40px;
+        }
+
+        .hero-content {
+            flex: 0 0 auto;
+            width: 45%;
+            animation: fadeInUp 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+        }
+
+        .hero-image {
+            width: 50%;
+            animation: fadeInUp 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(32px, 4vw, 44px);
+            line-height: 1.1;
+            font-weight: 700;
+            letter-spacing: -0.003em;
+            margin: 0 0 20px;
+            text-wrap: balance;
+        }
+
+        .hero-content p {
+            font-size: clamp(21px, 2.6vw, 28px);
+            font-weight: 500;
+            line-height: 1.55;
+            color: var(--text-main);
+            margin: 0 0 16px;
+        }
+
+        .hero-content p.hero-note {
+            font-size: 17px;
+            font-weight: 400;
+            margin: 14px 0 0;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 24px 0 0;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* --- Image placeholders (replace with real screenshots) --- */
+        .placeholder {
+            width: 100%;
+            aspect-ratio: 3 / 2;
+            background: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            padding: 24px;
+            box-sizing: border-box;
+            color: var(--text-secondary);
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+        }
+
+        .placeholder.tall { aspect-ratio: 1 / 1; }
+
+        /* --- APP STORE BADGES --- */
+        .store-badge {
+            height: 44px;
+            width: auto;
+            display: inline-block;
+            transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateZ(0);
+            will-change: transform;
+        }
+        .store-badge:hover { transform: scale(1.04) translateZ(0); }
+        .store-badge:active { transform: scale(0.98) translateZ(0); }
+
+        /* --- Feature sections --- */
+        .feature {
+            padding: 80px 0;
+        }
+
+        .feature.alt { background-color: var(--bg-light); }
+
+        .feature-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .feature.reverse .feature-copy { order: 2; }
+        .feature.reverse .feature-visual { order: 1; }
+
+        /* Feature section with text cards: headline above, cards side by side */
+        .info-cards {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .info-card {
+            --info-card-bg: #ffffff;
+            background-color: var(--info-card-bg);
+            border-radius: 18px;
+            border: 1px solid var(--border-color);
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .info-icon {
+            width: 28px;
+            height: 28px;
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+
+        .info-card h3 {
+            font-size: 19px;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+            margin: 0 0 10px;
+        }
+
+        .info-card p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: var(--text-main);
+            margin: 0;
+            text-wrap: pretty;
+        }
+
+        .feature-image {
+            box-sizing: border-box;
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 18px;
+            border: 1px solid var(--border-color);
+        }
+
+        /* The password card image has a wide transparent margin, so it is
+           scaled up inside its frame, and the frame is drawn on the wrapper. */
+        .paper-texture-wrapper.framed {
+            aspect-ratio: 3 / 2;
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            box-sizing: border-box;
+        }
+
+        .feature-image.fill-frame {
+            border: 0;
+            border-radius: 0;
+            transform: scale(1.3);
+            transform-origin: 50% 51%;
+        }
+
+        /* Paper texture overlay (same settings as StudioMemory) */
+        .paper-texture-wrapper {
+            position: relative;
+            display: block;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .paper-texture-wrapper::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.02;
+            background-image: url('paper-fibers.png');
+            mix-blend-mode: soft-light;
+        }
+
+        .section-eyebrow {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-main);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .section-headline {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--text-main);
+            margin: 0 0 20px;
+            text-wrap: balance;
+        }
+
+        .feature-copy p {
+            font-size: 17px;
+            line-height: 1.55;
+            color: var(--text-main);
+            margin: 0 0 16px;
+            text-wrap: pretty;
+        }
+
+        .feature-copy p.key-line {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        .feature-copy p.tagline { font-style: italic; }
+
+        .emph { color: var(--text-main); font-weight: 600; }
+
+        /* --- Testimonials --- */
+        .testimonials {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            padding: 0 20px;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        .section-header p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin: 12px 0 0;
+        }
+
+        .quotes {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .quote-card {
+            background-color: var(--bg-light);
+            border-radius: 18px;
+            border: 1px solid var(--border-color);
+            padding: 28px;
+            margin: 0;
+        }
+
+        .quote-card blockquote {
+            margin: 0 0 16px;
+            font-size: 18px;
+            line-height: 1.4;
+            font-weight: 500;
+            text-wrap: pretty;
+        }
+
+        .quote-card figcaption {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        /* --- Tap an image to view it full screen (lightbox) --- */
+        .gallery-trigger {
+            appearance: none;
+            -webkit-appearance: none;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            background: transparent;
+            display: block;
+            cursor: zoom-in;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .gallery-trigger:focus-visible {
+            outline: 2px solid var(--apple-blue);
+            outline-offset: 4px;
+            border-radius: 18px;
+        }
+
+        .gallery-trigger.suppress-focus-ring:focus-visible { outline: none; }
+
+        @keyframes lightboxPop {
+            0% { opacity: 0; transform: scale(0.95); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes backdropFade {
+            0% { opacity: 0; backdrop-filter: blur(0px); -webkit-backdrop-filter: blur(0px); }
+            100% { opacity: 1; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        }
+
+        dialog.lightbox {
+            padding: 0;
+            border: none;
+            background: transparent;
+            max-width: 95vw;
+            max-height: 95vh;
+            border-radius: 16px;
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        dialog.lightbox[open] {
+            animation: lightboxPop 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        dialog.lightbox::backdrop {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            cursor: zoom-out;
+        }
+
+        dialog.lightbox[open]::backdrop {
+            animation: backdropFade 0.3s ease-out forwards;
+        }
+
+        dialog.lightbox img {
+            max-width: 95vw;
+            max-height: 95vh;
+            width: auto;
+            height: auto;
+            display: block;
+            outline: none;
+            cursor: zoom-out;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            dialog.lightbox::backdrop { background: rgba(0, 0, 0, 0.75); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            dialog.lightbox[open],
+            dialog.lightbox[open]::backdrop { animation: none; }
+        }
+
+        /* --- Footer --- */
+        footer {
+            padding: 60px 10% 40px;
+            text-align: center;
+            background-color: var(--bg-light);
+        }
+
+        .footer-cta { max-width: 700px; margin: 0 auto; }
+
+        .footer-cta h2 {
+            font-size: 28px;
+            margin: 0 0 12px;
+            text-wrap: balance;
+        }
+
+        .footer-cta p {
+            font-size: 17px;
+            color: var(--text-main);
+            margin: 0 0 14px;
+            text-wrap: pretty;
+        }
+
+        .footer-cta p.key-line { color: var(--text-main); font-weight: 600; }
+
+        .footer-cta .cta-buttons { justify-content: center; }
+
+        .footer-cta p.fine-print { font-size: 14px; margin-top: 16px; }
+
+        .footer-nav {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+
+        /* .footer-nav a link styling is in shared.css */
+
+        /* --- Tablet / Mobile --- */
+        @media (max-width: 1024px) {
+            .hero {
+                flex-direction: column;
+                padding: calc(60px + env(safe-area-inset-top)) 8% 40px;
+                text-align: center;
+                gap: 32px;
+            }
+            .hero-content { width: 100%; display: flex; flex-direction: column; align-items: center; }
+            .hero-image { width: 100%; }
+            .cta-buttons { justify-content: center; }
+
+            .feature { padding: 60px 8%; }
+            .feature-inner { grid-template-columns: 1fr; gap: 36px; }
+            .feature.reverse .feature-copy,
+            .feature.reverse .feature-visual { order: initial; }
+
+            .quotes { grid-template-columns: 1fr; padding: 0 8%; }
+            .info-cards { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .footer-nav { gap: 15px; }
+        }
+
+        /* --- NATIVE DARK MODE SUPPORT --- */
+        /* Color variables and nav dark styling are in shared.css */
+        @media (prefers-color-scheme: dark) {
+            body { background-color: #000000; }
+            footer { background-color: var(--bg-light); }
+
+            .info-card { --info-card-bg: #000000; }
+        }
+
+        /* --- REDUCED MOTION SUPPORT --- */
+        @media (prefers-reduced-motion: reduce) {
+            .hero-content,
+            .hero-image {
+                animation: none;
+                opacity: 1;
+                transform: none;
+            }
+            .store-badge { transition: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo-container">
+            <img src="AppIcon.png" alt="LegacyFolio Logo" class="logo-img">
+            <span>Legacy<span class="logo-folio">Folio</span>™</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+            <a href="about.html">About</a>
+            <a href="manual.html">User Guide</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Everything they need,<br>when they need it.</h1>
+                <p><span class="nowrap">No data collection.</span> <span class="nowrap">No LegacyFolio cloud.</span></p>
+                <div class="cta-buttons">
+                    <!-- TODO: replace # with the LegacyFolio App Store URL -->
+                    <a href="#" aria-label="Download free on the App Store">
+                        <img src="app-store-badge.svg" alt="Download on the App Store" class="store-badge">
+                    </a>
+                    <a href="#" aria-label="Download free on the Mac App Store">
+                        <img src="mac-app-store-badge.svg" alt="Download on the Mac App Store" class="store-badge">
+                    </a>
+                </div>
+                <p class="hero-note"><span class="nowrap">Create a simple Folio for free.</span> <span class="nowrap">No account required.</span></p>
+            </div>
+            <div class="hero-image">
+                <button type="button" class="gallery-trigger" aria-label="View larger image: LegacyFolio on iPhone, iPad, and Mac">
+                    <img src="hero.webp" width="6000" height="4000" fetchpriority="high" loading="eager" class="hero-img" alt="" data-full-alt="LegacyFolio on a Mac, an iPad, and an iPhone, showing a will record, with the category list in the sidebar.">
+                </button>
+            </div>
+        </section>
+
+        <!-- The Folio -->
+        <section class="feature alt reverse" id="folio">
+            <div class="feature-inner">
+                <div class="feature-copy">
+                    <h2 class="section-headline">Put everything in one place, for the people you trust.</h2>
+                    <p>LegacyFolio helps you identify and organize the important information, photos, and documents your substitute decision-makers and executors will need to care for you and manage your estate. It&rsquo;s organized to remind you of the details that are easy to forget.</p>
+                    <p class="key-line">Accounts. Insurance. Property. Medical details. Legal documents. Passwords. Final wishes.</p>
+                    <p>When you&rsquo;re ready, LegacyFolio creates your Folio: a well-organized, password-protected PDF that you can share with the people you trust when and how you choose.</p>
+                    <p>LegacyFolio can gently remind you to keep your Folio current, and flag any records that are out of date.</p>
+                    <p><span class="emph">The people you trust don&rsquo;t need the LegacyFolio app to read your Folio.</span> They can open it in any regular web browser or PDF reader with the password you provide, and find what they need through a clickable table of contents.</p>
+                </div>
+                <div class="feature-visual">
+                    <button type="button" class="gallery-trigger" aria-label="View larger image: sample Folio pages">
+                        <img src="folio.webp" width="6000" height="6000" loading="lazy" class="feature-image" alt="" data-full-alt="Sample pages from a LegacyFolio Folio: the cover, the table of contents, an owner profile page, and a will page.">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Your Control -->
+        <section class="feature" id="control">
+            <div class="feature-inner">
+                <div class="feature-copy">
+                    <h2 class="section-headline">You&rsquo;re in control.</h2>
+                    <p>You choose what goes in your Folio, including photos and PDF documents.</p>
+                    <p>You can update and share your Folio as often as you like, with the same password or a different one.</p>
+                    <p>You choose when and how to share your Folio and its password, together or separately.</p>
+                    <p>For example, you could send quarterly updates of your Folio to your executor or substitute decision-maker, and leave the password with your lawyer to share when the time comes.</p>
+                </div>
+                <div class="feature-visual">
+                    <button type="button" class="gallery-trigger" aria-label="View larger image: Folio password card">
+                        <div class="paper-texture-wrapper framed">
+                            <img src="password.webp" width="6000" height="4000" loading="lazy" class="feature-image fill-frame" alt="" data-full-alt="A LegacyFolio password card showing a sample Folio password.">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy -->
+        <section class="feature alt" id="privacy">
+            <div class="section-header">
+                <h2 class="section-headline">No strings attached.</h2>
+            </div>
+            <div class="info-cards">
+                <div class="info-card">
+                    <svg class="info-icon" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3" /></svg>
+                    <h3>Your Data Belongs to You.</h3>
+                    <p>LegacyFolio collects no data and requires no account. We never access or store your information, photos, or documents. Your data stays on your devices and, if you choose to sync, in your private Apple iCloud.</p>
+                </div>
+                <div class="info-card">
+                    <svg class="info-icon" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    <h3>Yours to Keep.</h3>
+                    <p>Your Folio is a standard PDF file. It opens in any web browser or PDF reader, today and years from now, without using the LegacyFolio app.</p>
+                </div>
+                <div class="info-card">
+                    <svg class="info-icon" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V5z" /><path stroke-linecap="round" stroke-linejoin="round" d="M6 20h8M10 17v3" /><rect x="13" y="8" width="7" height="10" rx="1" stroke="currentColor" style="fill:var(--info-card-bg)" /><rect x="18" y="12" width="4" height="7" rx="0.5" stroke="currentColor" style="fill:var(--info-card-bg)" /></svg>
+                    <h3>One License, All Devices.</h3>
+                    <p>One license lets you use LegacyFolio on your iPhone, iPad, and Mac.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials" id="testimonials">
+            <div class="section-header">
+                <h2 class="section-headline">What people are saying</h2>
+            </div>
+            <div class="quotes">
+                <figure class="quote-card">
+                    <blockquote>[Insert real beta tester testimonial.]</blockquote>
+                    <figcaption>[Name / Age, if appropriate]</figcaption>
+                </figure>
+                <figure class="quote-card">
+                    <blockquote>[Insert real beta tester testimonial.]</blockquote>
+                    <figcaption>[Name / Age, if appropriate]</figcaption>
+                </figure>
+                <figure class="quote-card">
+                    <blockquote>[Insert real beta tester testimonial.]</blockquote>
+                    <figcaption>[Name / Age, if appropriate]</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-cta">
+                <h2>Create a simple Folio for free.</h2>
+                <p>Use LegacyFolio to create a Folio with up to 10 records, free for as long as you like.</p>
+                <p>Purchase a one-time license to remove the record limit. No annual fee.</p>
+                <div class="cta-buttons">
+                    <a href="#" aria-label="Download free on the App Store">
+                        <img src="app-store-badge.svg" alt="Download on the App Store" class="store-badge">
+                    </a>
+                    <a href="#" aria-label="Download free on the Mac App Store">
+                        <img src="mac-app-store-badge.svg" alt="Download on the Mac App Store" class="store-badge">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="mailto:support@legacyfolioapp.com?subject=LegacyFolio%20Support%20Request">Contact Support</a>
+            </div>
+        </footer>
+    </main>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Enlarged image view">
+        <img src="" alt="" id="lightbox-img">
+    </dialog>
+
+    <script src="script.js" defer></script>
+    <script src="nav.js"></script>
+</body>
+</html>

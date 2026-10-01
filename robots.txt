@@ -1,0 +1,17 @@
+# LegacyFolio
+User-agent: *
+Allow: /
+# AI crawlers explicitly allowed (change Allow to Disallow to opt one out)
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+Sitemap: https://legacyfolioapp.com/sitemap.xml

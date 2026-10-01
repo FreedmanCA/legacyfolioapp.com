@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <title>LegacyFolio | Frequently Asked Questions</title>
+    <link rel="canonical" href="https://legacyfolioapp.com/faq.html">
+    <meta name="description" content="Frequently asked questions about LegacyFolio.">
+    <meta property="og:title" content="LegacyFolio | Frequently Asked Questions">
+    <meta property="og:description" content="Frequently asked questions about LegacyFolio.">
+    <meta property="og:image" content="https://legacyfolioapp.com/OGImage.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="LegacyFolio">
+    <meta property="og:url" content="https://legacyfolioapp.com/faq.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LegacyFolio | Frequently Asked Questions">
+    <meta name="twitter:description" content="Frequently asked questions about LegacyFolio.">
+    <meta name="twitter:image" content="https://legacyfolioapp.com/OGImage.webp">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon-96x96.png" type="image/png" sizes="96x96">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="shared.css">
+    <style>
+        /* Page-specific: warning callout colors used in blockquote.warning */
+        :root {
+            --warning-bg: #fff9e6;
+            --warning-border: #ffcc00;
+            --warning-text: #665200;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: #ffffff;
+            color: var(--text-main);
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Nav, hamburger menu, and mobile overlay are in shared.css */
+
+        @media (max-width: 768px) {
+            .footer-nav {
+                gap: 15px;
+                padding: 20px 0 40px;
+            }
+        }
+
+        /* Container & Back Link */
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: -0.015em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: -0.007em;
+            margin-top: 40px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .faq-item {
+            margin-bottom: 32px;
+        }
+
+        h3 {
+            font-size: 19px;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 12px;
+            letter-spacing: -0.002em;
+        }
+
+        p {
+            font-size: 16px;
+            color: var(--text-main);
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            margin-top: 0;
+            margin-bottom: 16px;
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+
+        blockquote {
+            background-color: var(--bg-light);
+            border-left: 4px solid var(--apple-blue);
+            margin: 20px 0;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        blockquote p {
+            margin: 0;
+            font-size: 15px;
+        }
+
+        blockquote.warning {
+            background-color: var(--warning-bg);
+            border-left-color: var(--warning-border);
+        }
+
+        blockquote.warning p {
+            color: var(--warning-text);
+        }
+
+        a {
+            color: var(--apple-blue);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid var(--border-color);
+            margin: 40px 0;
+        }
+
+        /* Unified Footer Navigation */
+        .footer-nav {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            border-top: 1px solid var(--border-color);
+            padding: 30px 0 60px;
+        }
+
+        /* Footer link styling (.footer-nav a) is in shared.css */
+
+        /* Color variables and nav dark styling are in shared.css */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --warning-bg: #2d2400;
+                --warning-border: #b38f00;
+                --warning-text: #ffeb99;
+            }
+
+            body {
+                background-color: #000000;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo-container">
+            <img src="AppIcon.png" alt="LegacyFolio Logo" class="logo-img">
+            <span>Legacy<span class="logo-folio">Folio</span>™</span>
+        </a>
+        
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+        </button>
+                
+
+        <div class="nav-links" id="nav-links">
+            <a href="about.html">About</a>
+            <a href="manual.html">User Guide</a>
+            <a href="faq.html" class="current">FAQ</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <main>
+        <header>
+            <h1>Frequently Asked Questions</h1>
+        </header>
+        </main>
+
+        <footer class="footer-nav">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="mailto:support@legacyfolioapp.com?subject=LegacyFolio%20Support%20Request">Contact Support</a>
+        </footer>
+    </div>
+
+    <script src="nav.js"></script>
+</body>
+</html>

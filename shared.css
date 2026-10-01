@@ -1,0 +1,209 @@
+/* ==========================================
+   LegacyFolio — Shared Site CSS
+   Nav, hamburger menu, mobile overlay, and
+   color variables used on every page.
+   Page-specific layout stays in each page's
+   own inline <style> block.
+   ========================================== */
+
+html {
+    scrollbar-gutter: stable;
+}
+
+/* Used by nav.js and script.js to lock background scroll while an
+   overlay (mobile menu / lightbox) is open, instead of inline styles. */
+body.scroll-locked {
+    overflow: hidden;
+}
+
+:root {
+    --apple-blue: #0071e3;
+    --text-main: #1d1d1f;
+    --text-secondary: #86868b;
+    --bg-light: #f5f5f7;
+    --border-color: #d2d2d7;
+    --font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    /* Same text spacing on every page, whatever the page body sets */
+    letter-spacing: normal;
+    line-height: 1.5;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 22px;
+    transition: opacity 0.2s ease;
+}
+
+.logo-container:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Desktop Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.75; /* Mutes inactive links */
+    transition: opacity 0.2s ease;
+}
+
+/* Light up links on hover or if it is the current page */
+.nav-links a:hover,
+.nav-links a.current {
+    opacity: 1;
+    text-decoration: none;
+}
+
+/* Hamburger Menu Toggle Button */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22px;
+    height: 16px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.hamburger-bar {
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-main);
+    transition: transform 0.25s ease, opacity 0.25s ease;
+    transform-origin: left center;
+}
+
+/* Mobile Responsive Navigation Overlay */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        position: fixed;
+        top: 48px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: #ffffff;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+        transition: height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .nav-links a {
+        width: 100%;
+        padding: 20px 10%;
+        font-size: 18px;
+        font-weight: 500;
+        border-bottom: 1px solid var(--border-color);
+        box-sizing: border-box;
+    }
+
+    .nav-links.active {
+        height: calc(100vh - 48px);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Morph bars into an 'X' symbol */
+    .menu-toggle.open .hamburger-bar:nth-child(1) {
+        transform: rotate(45deg) translate(1px, -1px);
+    }
+    .menu-toggle.open .hamburger-bar:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    .menu-toggle.open .hamburger-bar:nth-child(3) {
+        transform: rotate(-45deg) translate(1px, 1px);
+    }
+}
+
+/* Shared footer link styling (layout/spacing of the footer container
+   stays page-specific, since footer structure differs by page) */
+.footer-nav a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.75;
+    transition: opacity 0.2s ease;
+}
+
+.footer-nav a:hover,
+.footer-nav a.current {
+    opacity: 1;
+    text-decoration: none;
+}
+
+/* Native Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --apple-blue: #2997ff;
+        --text-main: #f5f5f7;
+        --text-secondary: #86868b;
+        --bg-light: #1c1c1e;
+        --border-color: #424245;
+    }
+
+    nav {
+        background: rgba(0, 0, 0, 0.8);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+@media (prefers-color-scheme: dark) and (max-width: 768px) {
+    .nav-links {
+        background-color: #000000;
+    }
+    .nav-links a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Nav logo: "Folio" in grey */
+.logo-folio {
+    color: var(--text-secondary);
+}
