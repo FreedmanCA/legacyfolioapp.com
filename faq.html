@@ -6,21 +6,23 @@
     <meta name="color-scheme" content="light dark">
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
-    <title>LegacyFolio | Frequently Asked Questions</title>
+    <title>LegacyFolio FAQ – Privacy, Passwords, Sharing, and Pricing</title>
     <link rel="canonical" href="https://legacyfolioapp.com/faq.html">
-    <meta name="description" content="Frequently asked questions about LegacyFolio.">
-    <meta property="og:title" content="LegacyFolio | Frequently Asked Questions">
-    <meta property="og:description" content="Frequently asked questions about LegacyFolio.">
-    <meta property="og:image" content="https://legacyfolioapp.com/OGImage.webp">
+    <meta name="description" content="Answers to common questions about LegacyFolio: what a Folio is, privacy and security, passwords, sharing, iCloud sync and Archives, pricing, and support.">
+    <meta property="og:title" content="LegacyFolio FAQ – Privacy, Passwords, Sharing, and Pricing">
+    <meta property="og:description" content="Answers to common questions about LegacyFolio: what a Folio is, privacy and security, passwords, sharing, iCloud sync and Archives, pricing, and support.">
+    <meta property="og:image" content="https://legacyfolioapp.com/OGImage.jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="LegacyFolio on a Mac, an iPad, and an iPhone, showing a will record.">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="LegacyFolio">
     <meta property="og:url" content="https://legacyfolioapp.com/faq.html">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LegacyFolio | Frequently Asked Questions">
-    <meta name="twitter:description" content="Frequently asked questions about LegacyFolio.">
-    <meta name="twitter:image" content="https://legacyfolioapp.com/OGImage.webp">
+    <meta name="twitter:title" content="LegacyFolio FAQ – Privacy, Passwords, Sharing, and Pricing">
+    <meta name="twitter:description" content="Answers to common questions about LegacyFolio: what a Folio is, privacy and security, passwords, sharing, iCloud sync and Archives, pricing, and support.">
+    <meta name="twitter:image" content="https://legacyfolioapp.com/OGImage.jpeg">
+    <meta name="twitter:image:alt" content="LegacyFolio on a Mac, an iPad, and an iPhone, showing a will record.">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon-96x96.png" type="image/png" sizes="96x96">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -45,20 +47,12 @@
 
         /* Nav, hamburger menu, and mobile overlay are in shared.css */
 
-        @media (max-width: 768px) {
-            .footer-nav {
-                gap: 15px;
-                padding: 20px 0 40px;
-            }
-        }
-
-        /* Container & Back Link */
+        /* Container */
         .container {
             max-width: 680px;
             margin: 0 auto;
             padding: 40px 20px;
         }
-        
 
         header {
             text-align: center;
@@ -86,6 +80,8 @@
 
         .faq-item {
             margin-bottom: 32px;
+            /* Keeps linked questions clear of the sticky nav bar */
+            scroll-margin-top: 70px;
         }
 
         h3 {
@@ -167,6 +163,14 @@
 
         /* Footer link styling (.footer-nav a) is in shared.css */
 
+        /* Mobile: page-specific footer-nav layout only (nav overlay is in shared.css) */
+        @media (max-width: 768px) {
+            .footer-nav {
+                gap: 15px;
+                padding: 20px 0 40px;
+            }
+        }
+
         /* Color variables and nav dark styling are in shared.css */
         @media (prefers-color-scheme: dark) {
             :root {
@@ -185,30 +189,274 @@
 
     <nav>
         <a href="index.html" class="logo-container">
-            <img src="AppIcon.webp" alt="LegacyFolio Logo" class="logo-img">
+            <img src="AppIcon.webp" alt="" class="logo-img">
             <span>Legacy<span class="logo-folio">Folio</span>™</span>
         </a>
-        
+
         <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
         </button>
-                
 
         <div class="nav-links" id="nav-links">
             <a href="about.html">About</a>
             <a href="manual.html">User Guide</a>
-            <a href="faq.html" class="current">FAQ</a>
+            <a href="faq.html" class="current" aria-current="page">FAQ</a>
         </div>
     </nav>
 
     <div class="container">
-        
+
         <main>
         <header>
             <h1>Frequently Asked Questions</h1>
         </header>
+
+            <section>
+                <h2>About LegacyFolio</h2>
+
+                <div class="faq-item">
+                    <h3>What is LegacyFolio?</h3>
+                    <p>LegacyFolio is a private estate organizer, a digital legacy binder, for iPhone, iPad, and Mac. It helps you collect the information, photos, and documents your executors and substitute decision-makers, such as the people named in your powers of attorney, will need to manage your affairs and estate. It brings them together in a <strong>Folio</strong>: a well-organized, password-protected PDF that you share with the people you trust.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Why is LegacyFolio different from a document, notes, or a spreadsheet?</h3>
+                    <p>LegacyFolio organizes your records into categories, with a guide to what each one can hold, and flags missing basic details and records that may be out of date. You enter each person, pet, place, or organization once and link it to any record that needs it.</p>
+                    <p>When you are ready, LegacyFolio turns everything, including your photos and PDFs, into a single password-protected Folio that the people you trust can open without the app. When your information changes, update your records and create a new Folio in moments. You can share updated Folios as often as you like, using your current Folio Password or a new one. Older Folios keep the password they were created with.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do the people I share my Folio with need the app?</h3>
+                    <p>No. Your Folio recipients open your Folio in any regular web browser or PDF reader, using the password you give them.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Does LegacyFolio collect my personal information?</h3>
+                    <p>No. LegacyFolio collects no data and requires no account.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Which devices does LegacyFolio work on?</h3>
+                    <p>LegacyFolio works on iPhone, iPad, and Mac. One universal license covers all three. If you use iCloud sync, your information stays current across all your Apple devices signed in to the same iCloud account.</p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>Privacy and Security</h2>
+
+                <div class="faq-item">
+                    <h3>Where is my information stored?</h3>
+                    <p>Your information stays on your devices and, if you choose to sync, in your private Apple iCloud. LegacyFolio does not store any data on its own servers, and it never shares anything automatically.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can anyone at LegacyFolio see my information?</h3>
+                    <p>No. LegacyFolio collects no data and requires no account, so we have no access to your records, photos, documents, or Folios. We also have no copy of your passwords, and we cannot recover them.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is my information encrypted?</h3>
+                    <p>ID and account numbers, access and recovery codes, seed phrases, medical details, legacy letters, and your Message to Reader are end-to-end encrypted in iCloud. For everything else, Apple holds the keys unless you turn on Apple&rsquo;s Advanced Data Protection (ADP).</p>
+                    <p>On a Mac, turn on FileVault to encrypt the data stored on the Mac itself. You can find it in System Settings &gt; Privacy &amp; Security &gt; FileVault. Many newer Macs turn it on automatically.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Should I turn on Advanced Data Protection?</h3>
+                    <p>ADP applies end-to-end encryption to all of your iCloud data, so that Apple cannot access it. It also means only you can recover your data. If you lose access to your devices and your recovery method, your data cannot be restored, not even by Apple. If you turn on ADP, set up a recovery key or recovery contact.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What protects LegacyFolio if someone else uses my device?</h3>
+                    <p>Your App Password locks LegacyFolio, and you can also use Face ID or Touch ID. In Settings, you choose how soon LegacyFolio locks after you leave it.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is my Folio protected when I share it?</h3>
+                    <p>Yes. Every Folio is a password-protected PDF, so anyone who receives the file also needs the Folio Password to open it. For extra protection, give the Folio and its password by different methods.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Does address search send information anywhere?</h3>
+                    <p>When you search for an address, what you type is sent to Apple Maps to find matches. Address search is optional. You can turn off address search in Settings and type addresses yourself.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Does LegacyFolio change my Contacts?</h3>
+                    <p>No. LegacyFolio only reads Contacts when you import a person&rsquo;s details. It never changes them. If the details change in Contacts, LegacyFolio can alert you so you can choose which changes to accept. You can turn off these alerts in Settings.</p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>Passwords</h2>
+
+                <div class="faq-item">
+                    <h3>What passwords does LegacyFolio use?</h3>
+                    <ul>
+                        <li><strong>App Password:</strong> Locks the app. You can also use Face ID or Touch ID.</li>
+                        <li><strong>Folio Password:</strong> Protects your Folio. You give it to the people who will read your Folio. To see your current Folio Password, print a Folio Password Card.</li>
+                        <li><strong>Archive Password:</strong> Protects your Archives, the encrypted copies of your data.</li>
+                    </ul>
+                    <p>All three are stored in your iCloud Keychain, so they are available on every device signed in to your iCloud account.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What if I forget a password?</h3>
+                    <blockquote class="warning">
+                        <p><strong>Password Warning:</strong> LegacyFolio cannot recover your passwords, and reinstalling the app will not reset your App Password. Choose passwords you will remember.</p>
+                    </blockquote>
+                </div>
+
+                <div class="faq-item">
+                    <h3>If I change my Folio Password, will my older Folios still open?</h3>
+                    <p>Yes, but with the old password. A new Folio Password applies only to Folios created after the change. Each Folio opens with the password it was created with.</p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>Your Folio</h2>
+
+                <div class="faq-item">
+                    <h3>What is in my Folio?</h3>
+                    <ul>
+                        <li>A cover and a table of contents with clickable links.</li>
+                        <li>Your Message to Reader, if you have written one.</li>
+                        <li>Your records, organized by category, with numbered pages.</li>
+                        <li>Your attachments, all included at the end of the Folio.</li>
+                    </ul>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I see how a record will look in my Folio?</h3>
+                    <p>Yes. Every record has a <strong>Preview Folio</strong> button that shows how the record will appear in your Folio. You can hide the Preview Folio button in Settings.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I review my Folio before I share it?</h3>
+                    <p>Yes. Creating a Folio does not share it. LegacyFolio never shares anything automatically. Create your Folio, open it, and review it as often as you like. When you are happy with it, share it with the people you trust. If you find something to change, update your records and create a new Folio.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I share my Folio?</h3>
+                    <p>You decide when and how. You can give someone your Folio and its password at the same time, or at different times, or by different methods. For example, you could send quarterly updates of your Folio to your executors or substitute decision-makers, and leave the Folio Password with your lawyer to share when the time comes.</p>
+                    <p>Your Folio is a standard PDF file, so you can share it the same way you share any other file. LegacyFolio shows the approximate size of your Folio before you create it, which can help you choose a method:</p>
+                    <ul>
+                        <li><strong>Email:</strong> Attach your Folio to an email. Most email services limit attachments to about 20&ndash;25&nbsp;MB.</li>
+                        <li><strong>Mail Drop:</strong> For larger Folios, Apple Mail can send the file using Mail Drop, which uploads it to iCloud and emails a download link. Files up to 5&nbsp;GB can be sent, and the link expires after 30 days, so ask your recipient to download and save the Folio.</li>
+                        <li><strong>AirDrop or Messages:</strong> Send your Folio directly to someone nearby with AirDrop, or in a message.</li>
+                        <li><strong>Cloud Storage:</strong> Upload your Folio to a service such as iCloud Drive, Dropbox, Google Drive, or OneDrive, and share a link. Anyone with the link can download the Folio, but they still need the Folio Password to open it.</li>
+                        <li><strong>USB Drive:</strong> Save your Folio to a USB drive and give it to someone in person, or store it with your important documents.</li>
+                        <li><strong>Printed Copy:</strong> Print your Folio and give someone the paper copy. A printed Folio is not password-protected, so store it carefully. See <a href="#printing">Can I print my Folio?</a> below.</li>
+                    </ul>
+                    <p>For extra protection, give the Folio and its password by different methods. For example, email the Folio and give the password in person or on the printed Folio Password Card.</p>
+                    <p>LegacyFolio can also print a Folio Password Card that shows the password and tells the reader how to open the Folio.</p>
+                </div>
+
+                <div class="faq-item" id="printing">
+                    <h3>Can I print my Folio?</h3>
+                    <p>Yes. Open your Folio in any web browser or PDF reader, enter the Folio Password, and print it like any other document. The pages are numbered, so the table of contents works on paper too. When you create your Folio, you can choose a larger text size if it will be read on paper.</p>
+                    <p>You can also give someone a printed Folio instead of an electronic copy, for example someone who prefers to read on paper.</p>
+                    <blockquote class="warning">
+                        <p><strong>Printing Warning:</strong> A printed Folio is not password-protected. Anyone who has the paper copy can read it, so store it as carefully as your other important documents.</p>
+                    </blockquote>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I keep my Folio up to date?</h3>
+                    <p>Create a new Folio whenever your information changes, and give your trusted people the new Folio. It can use the same Folio Password. LegacyFolio flags records that are missing basic details or have not been updated for a while, and can send you a reminder to review your information on a schedule you choose.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Will my Folio still open if I stop using LegacyFolio?</h3>
+                    <p>Yes. Your Folio is a standard, password-protected PDF file. It opens in any web browser or PDF reader, today and years from now, without the LegacyFolio app.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do I still need to keep my original documents?</h3>
+                    <p>Yes. You can attach photos and PDFs of your documents, but your substitute decision-makers and executors may need the originals. Keep your original documents in safekeeping, and record where they are stored in LegacyFolio.</p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>Sync, Storage, and Archives</h2>
+
+                <div class="faq-item">
+                    <h3>Can I use LegacyFolio without iCloud?</h3>
+                    <p>Yes. Turn off iCloud sync for LegacyFolio in your device&rsquo;s iCloud settings. Your information then stays on that device only, so keep your own copies, such as a current Folio or an Archive.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Does LegacyFolio use my iCloud storage?</h3>
+                    <p>Yes, if you use iCloud sync. Your data is stored in your own private iCloud, so it counts against your Apple iCloud storage. LegacyFolio optimizes photos to save space.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What happens if I get a new iPhone, iPad, or Mac?</h3>
+                    <ul>
+                        <li><strong>With iCloud Sync:</strong> Your data is stored in your private Apple iCloud, so it is available on your new device when you sign in to the same iCloud account.</li>
+                        <li><strong>Without iCloud Sync:</strong> Export an <strong>Archive</strong> on your old device and import it on your new one.</li>
+                    </ul>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What happens if I delete the app or lose my device?</h3>
+                    <blockquote class="warning">
+                        <p><strong>Data Warning:</strong> If iCloud sync is off, your data exists only on the device where you entered it. If you delete the app or lose the device, your data cannot be recovered unless you have a previously exported <strong>Archive</strong>. If iCloud sync is on, your data remains in your iCloud.</p>
+                    </blockquote>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What is an Archive?</h3>
+                    <p>An Archive is an encrypted copy of all your data in LegacyFolio, meant for people who do not use iCloud sync. You export and import Archives in Settings. An Archive can only be opened by LegacyFolio, and importing one only adds missing records. It never deletes or overwrites what you have.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I recover a record I deleted?</h3>
+                    <blockquote>
+                        <p><strong>The 30-Day Rule:</strong> A deleted record goes to Recently Deleted for 30 days, where you can restore it. After 30 days it is permanently deleted. Deleting an attachment is immediate and permanent.</p>
+                    </blockquote>
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>Pricing</h2>
+
+                <div class="faq-item">
+                    <h3>What are the limits of the free and paid versions?</h3>
+                    <ul>
+                        <li><strong>Free Version:</strong> Create a Folio with up to <strong>10 records</strong>, for as long as you like.</li>
+                        <li><strong>Full Version:</strong> A one-time purchase removes the record limit. There is no annual fee.</li>
+                    </ul>
+                    <p>One universal license covers your iPhone, iPad, and Mac.</p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>Support</h2>
+
+                <div class="faq-item">
+                    <h3>How do I contact technical support?</h3>
+                    <p>Email <a href="mailto:support@legacyfolioapp.com">support@legacyfolioapp.com</a>. The <a href="manual.html">User Guide</a> also explains each part of the app.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How can I help technical support diagnose an issue?</h3>
+                    <p>Use &ldquo;Send Diagnostic File&rdquo; in Settings to create a technical log you can send to technical support.</p>
+                </div>
+            </section>
         </main>
 
         <footer class="footer-nav">

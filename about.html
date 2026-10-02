@@ -11,20 +11,22 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon-96x96.png" type="image/png" sizes="96x96">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    
-    <meta name="description" content="About LegacyFolio: Developed by Nekudot&nbsp;Design&nbsp;Limited. Learn more about the private estate-information app for iPhone, iPad, and Mac.">
+
+    <meta name="description" content="About LegacyFolio, the private and secure way to organize your information, documents, and wishes for iPhone, iPad, and Mac. Made by Nekudot Design Limited in Vancouver, Canada.">
     <meta property="og:title" content="LegacyFolio | About">
-    <meta property="og:description" content="Legal information for LegacyFolio, your private and secure Folio of information, documents, and wishes.">
-    <meta property="og:image" content="https://legacyfolioapp.com/OGImage.webp">
+    <meta property="og:description" content="About LegacyFolio, the private and secure way to organize your information, documents, and wishes for iPhone, iPad, and Mac. Made by Nekudot Design Limited in Vancouver, Canada.">
+    <meta property="og:image" content="https://legacyfolioapp.com/OGImage.jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="LegacyFolio on a Mac, an iPad, and an iPhone, showing a will record.">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="LegacyFolio">
     <meta property="og:url" content="https://legacyfolioapp.com/about.html">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="LegacyFolio | About">
-    <meta name="twitter:description" content="Legal information for LegacyFolio, your private and secure Folio of information, documents, and wishes.">
-    <meta name="twitter:image" content="https://legacyfolioapp.com/OGImage.webp">
+    <meta name="twitter:description" content="About LegacyFolio, the private and secure way to organize your information, documents, and wishes for iPhone, iPad, and Mac. Made by Nekudot Design Limited in Vancouver, Canada.">
+    <meta name="twitter:image" content="https://legacyfolioapp.com/OGImage.jpeg">
+    <meta name="twitter:image:alt" content="LegacyFolio on a Mac, an iPad, and an iPhone, showing a will record.">
 
     <link rel="stylesheet" href="shared.css">
     <style>
@@ -40,7 +42,7 @@
 
         /* Nav, hamburger menu, and mobile overlay are in shared.css */
 
-        /* Container & Back Link */
+        /* Container */
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -48,7 +50,6 @@
             text-align: center;
         }
 
-        
         /* App Header Section - Matches AboutView.swift */
         .app-header {
             margin-top: 40px;
@@ -78,7 +79,7 @@
 
         hr {
             border: 0;
-            border-top: 1px solid #f0f0f0;
+            border-top: 1px solid var(--border-color);
             margin: 32px 0;
         }
 
@@ -112,7 +113,7 @@
             display: flex;
             justify-content: center;
             gap: 30px;
-            border-top: 1px solid #f0f0f0;
+            border-top: 1px solid var(--border-color);
             padding: 30px 0 60px;
         }
 
@@ -132,14 +133,6 @@
             body {
                 background-color: #000000;
             }
-
-            hr {
-                border-top: 1px solid #38383a;
-            }
-
-            .footer-nav {
-                border-top: 1px solid #38383a;
-            }
         }
 
     </style>
@@ -148,10 +141,10 @@
 
     <nav>
         <a href="index.html" class="logo-container">
-            <img src="AppIcon.webp" alt="LegacyFolio Logo" class="logo-img">
+            <img src="AppIcon.webp" alt="" class="logo-img">
             <span>Legacy<span class="logo-folio">Folio</span>™</span>
         </a>
-        
+
         <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
@@ -159,7 +152,7 @@
         </button>
 
         <div class="nav-links" id="nav-links">
-            <a href="about.html" class="current">About</a>
+            <a href="about.html" class="current" aria-current="page">About</a>
             <a href="manual.html">User Guide</a>
             <a href="faq.html">FAQ</a>
         </div>
@@ -169,7 +162,7 @@
         <main>
 
         <section class="app-header">
-            <img src="AppIcon.webp" alt="App Icon" class="app-icon">
+            <img src="AppIcon.webp" alt="" class="app-icon">
             <h1 class="app-name">Legacy<span class="logo-folio">Folio</span></h1>
             <p class="version-text">Version 1.0 (2026)</p>
         </section>
@@ -178,10 +171,10 @@
 
         <section class="legal-content">
             <div class="legal-text">
-                <p>Made by <a href="https://nekudotdesign.com" target="_blank" rel="noopener noreferrer">Nekudot&nbsp;Design&nbsp;Limited</a>  in Vancouver,&nbsp;Canada.</p>
+                <p>Made by <a href="https://nekudotdesign.com" target="_blank" rel="noopener noreferrer">Nekudot&nbsp;Design&nbsp;Limited</a> in Vancouver,&nbsp;Canada.</p>
                 <p>LegacyFolio™ is a trademark of Nekudot&nbsp;Design&nbsp;Limited.</p>
                 <p>Copyright &copy; 2026 Nekudot&nbsp;Design&nbsp;Limited. All&nbsp;Rights&nbsp;Reserved.</p>
-                <p>Use of LegacyFolio is subject to the terms of the Standard Apple Licensed Application End&nbsp;User&nbsp;License&nbsp;Agreement.</p>
+                <p>Use of LegacyFolio is subject to the terms of the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Standard Apple Licensed Application End&nbsp;User&nbsp;License&nbsp;Agreement</a>.</p>
             </div>
         </section>
 

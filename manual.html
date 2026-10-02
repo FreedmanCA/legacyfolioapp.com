@@ -1,339 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
-  <title>LegacyFolio | User Guide</title>
-  <link rel="canonical" href="https://legacyfolioapp.com/manual.html">
-  <meta name="description" content="How to use LegacyFolio: add your records, create your Folio, share it with the people you trust, and keep it current.">
-  
-  <meta property="og:title" content="LegacyFolio | User Guide">
-  <meta property="og:description" content="How to use LegacyFolio: add your records, create your Folio, and share it with the people you trust.">
-  <meta property="og:image" content="https://legacyfolioapp.com/OGImage.webp">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="LegacyFolio">
-  <meta property="og:url" content="https://legacyfolioapp.com/manual.html">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="LegacyFolio | User Guide">
-  <meta name="twitter:description" content="How to use LegacyFolio: add your records, create your Folio, and share it with the people you trust.">
-  <meta name="twitter:image" content="https://legacyfolioapp.com/OGImage.webp">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <title>LegacyFolio User Guide – Organize Your Estate Information</title>
+    <link rel="canonical" href="https://legacyfolioapp.com/manual.html">
+    <meta name="description" content="How to use LegacyFolio: add your records, create your Folio, share it with the people you trust, and keep it current.">
+
+    <meta property="og:title" content="LegacyFolio User Guide – Organize Your Estate Information">
+    <meta property="og:description" content="How to use LegacyFolio: add your records, create your Folio, and share it with the people you trust.">
+    <meta property="og:image" content="https://legacyfolioapp.com/OGImage.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="LegacyFolio on a Mac, an iPad, and an iPhone, showing a will record.">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="LegacyFolio">
+    <meta property="og:url" content="https://legacyfolioapp.com/manual.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LegacyFolio User Guide – Organize Your Estate Information">
+    <meta name="twitter:description" content="How to use LegacyFolio: add your records, create your Folio, and share it with the people you trust.">
+    <meta name="twitter:image" content="https://legacyfolioapp.com/OGImage.jpeg">
+    <meta name="twitter:image:alt" content="LegacyFolio on a Mac, an iPad, and an iPhone, showing a will record.">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon-96x96.png" type="image/png" sizes="96x96">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="shared.css">
-  <style>
-    html {
-        scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: var(--font-family);
-      color: var(--text-main);
-      background-color: #ffffff;
-      line-height: 1.5;
-      margin: 0;
-      padding: 0;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* Nav, hamburger menu, and mobile overlay are in shared.css */
-
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-
-    h1 { font-size: 32px; font-weight: 700; margin-bottom: 30px; letter-spacing: -0.02em; border-bottom: 1px solid #f0f0f0; padding-bottom: 15px; }
-    
-    h2 { 
-        font-size: 24px; 
-        font-weight: 600; 
-        margin-top: 50px; 
-        margin-bottom: 15px; 
-        color: var(--text-main); 
-        scroll-margin-top: 70px; 
-    }
-
-    h3 { font-size: 18px; font-weight: 600; margin-top: 25px; margin-bottom: 10px; }
-    p { margin-bottom: 15px; font-size: 17px; }
-    ul { margin-bottom: 20px; padding-left: 20px; }
-    li { margin-bottom: 10px; font-size: 17px; }
-        
-
-    .toc-container {
-        background-color: var(--bg-light);
-        padding: 24px;
-        border-radius: 12px;
-        margin: 32px 0;
-    }
-    .toc-container h2 {
-        margin-top: 0;
-        font-size: 20px;
-        border-bottom: none;
-        padding-bottom: 0;
-        scroll-margin-top: 0;
-    }
-    .toc-container ul {
-        list-style: none;
-        padding-left: 0;
-        margin-bottom: 0;
-    }
-    .toc-container li {
-        margin-bottom: 10px;
-        font-size: 16px;
-    }
-    .toc-container a {
-        color: var(--apple-blue);
-        text-decoration: none;
-        display: flex;
-        align-items: flex-start;
-    }
-    .toc-container a:hover {
-        text-decoration: underline;
-    }
-    .toc-number {
-        min-width: 32px;
-        flex-shrink: 0;
-        color: var(--text-secondary);
-        font-variant-numeric: tabular-nums;
-    }
-
-    /* Unified Footer Navigation */
-    .footer-nav {
-        margin-top: 80px;
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        border-top: 1px solid #f0f0f0;
-        padding: 30px 0;
-    }
-
-    /* .footer-nav a link styling is in shared.css */
-
-    .copyright {
-        font-size: 12px;
-        color: var(--text-secondary);
-        padding-bottom: 60px;
-        text-align: center;
-    }
-
-    strong { font-weight: 600; }
-
-    /* Mobile: page-specific footer-nav layout only (nav overlay is in shared.css) */
-    @media (max-width: 768px) {
-        .footer-nav {
-            gap: 15px;
-            padding: 20px 0;
+    <link rel="stylesheet" href="shared.css">
+    <style>
+        @media (prefers-reduced-motion: no-preference) {
+            html {
+                scroll-behavior: smooth;
+            }
         }
-    }
 
-    /* Color variables and nav dark styling are in shared.css */
-    @media (prefers-color-scheme: dark) {
         body {
-            background-color: #000000;
+            font-family: var(--font-family);
+            color: var(--text-main);
+            background-color: #ffffff;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
         }
 
-        h1 {
-            border-bottom: 1px solid #38383a;
+        /* Nav, hamburger menu, and mobile overlay are in shared.css */
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
 
+        h1 { font-size: 32px; font-weight: 700; margin-bottom: 30px; letter-spacing: -0.02em; border-bottom: 1px solid var(--border-color); padding-bottom: 15px; }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 50px;
+            margin-bottom: 15px;
+            color: var(--text-main);
+            scroll-margin-top: 70px;
+        }
+
+        h3 { font-size: 18px; font-weight: 600; margin-top: 25px; margin-bottom: 10px; scroll-margin-top: 70px; }
+        p { margin-bottom: 15px; font-size: 17px; }
+        ul { margin-bottom: 20px; padding-left: 20px; }
+        li { margin-bottom: 10px; font-size: 17px; }
+
+        .toc-container {
+            background-color: var(--bg-light);
+            padding: 24px;
+            border-radius: 12px;
+            margin: 32px 0;
+        }
+        .toc-container h2 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+        .toc-container ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+        .toc-container li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .toc-container a {
+            color: var(--apple-blue);
+            text-decoration: none;
+            display: flex;
+            align-items: flex-start;
+        }
+        .toc-container a:hover {
+            text-decoration: underline;
+        }
+        .toc-number {
+            min-width: 32px;
+            flex-shrink: 0;
+            color: var(--text-secondary);
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* Unified Footer Navigation */
         .footer-nav {
-            border-top: 1px solid #38383a;
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            border-top: 1px solid var(--border-color);
+            padding: 30px 0;
         }
-    }
 
-  </style>
+        /* .footer-nav a link styling is in shared.css */
+
+        .copyright {
+            font-size: 12px;
+            color: var(--text-secondary);
+            padding-bottom: 60px;
+            text-align: center;
+        }
+
+        strong { font-weight: 600; }
+
+        /* Mobile: page-specific footer-nav layout only (nav overlay is in shared.css) */
+        @media (max-width: 768px) {
+            .footer-nav {
+                gap: 15px;
+                padding: 20px 0;
+            }
+        }
+
+        /* Color variables and nav dark styling are in shared.css */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #000000;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <nav>
-      <a href="index.html" class="logo-container">
-          <img src="AppIcon.webp" alt="LegacyFolio Logo" class="logo-img">
-          <span>Legacy<span class="logo-folio">Folio</span>™</span>
-      </a>
+    <nav>
+        <a href="index.html" class="logo-container">
+            <img src="AppIcon.webp" alt="" class="logo-img">
+            <span>Legacy<span class="logo-folio">Folio</span>™</span>
+        </a>
 
-      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
-      </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+        </button>
 
-      <div class="nav-links" id="nav-links">
-          <a href="about.html">About</a>
-          <a href="manual.html" class="current">User Guide</a>
-          <a href="faq.html">FAQ</a>
-      </div>
-  </nav>
+        <div class="nav-links" id="nav-links">
+            <a href="about.html">About</a>
+            <a href="manual.html" class="current" aria-current="page">User Guide</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    </nav>
 
- <div class="container">
-    <main>
-    <h1>LegacyFolio User&nbsp;Guide</h1>
+    <div class="container">
+        <main>
+            <h1>LegacyFolio User&nbsp;Guide</h1>
 
-    <div class="toc-container">
-      <h2>Table of Contents</h2>
-      <ul>
-        <li><a href="#welcome"><span class="toc-number">1.</span> <span>Welcome to LegacyFolio</span></a></li>
-        <li><a href="#start"><span class="toc-number">2.</span> <span>Getting Started</span></a></li>
-        <li><a href="#message"><span class="toc-number">3.</span> <span>Your Profile and Message to Reader</span></a></li>
-        <li><a href="#records"><span class="toc-number">4.</span> <span>Adding Your Records</span></a></li>
-        <li><a href="#people"><span class="toc-number">5.</span> <span>The Directory: Entities, People, Pets, and Places</span></a></li>
-        <li><a href="#current"><span class="toc-number">6.</span> <span>Keeping Your Information Current</span></a></li>
-        <li><a href="#folio"><span class="toc-number">7.</span> <span>Creating Your Folio</span></a></li>
-        <li><a href="#sharing"><span class="toc-number">8.</span> <span>Sharing Your Folio and Password</span></a></li>
-        <li><a href="#backup"><span class="toc-number">9.</span> <span>Backing Up</span></a></li>
-        <li><a href="#privacy"><span class="toc-number">10.</span> <span>Privacy, Security, and Sync</span></a></li>
-        <li><a href="#deleting"><span class="toc-number">11.</span> <span>Deleting and Restoring</span></a></li>
-        <li><a href="#settings"><span class="toc-number">12.</span> <span>Settings</span></a></li>
-        <li><a href="#license"><span class="toc-number">13.</span> <span>Licenses and Limits</span></a></li>
-        <li><a href="#support"><span class="toc-number">14.</span> <span>Support</span></a></li>
-      </ul>
+            <div class="toc-container">
+                <h2>Table of Contents</h2>
+                <ul>
+                    <li><a href="#welcome"><span class="toc-number">1.</span> <span>Welcome to LegacyFolio</span></a></li>
+                    <li><a href="#start"><span class="toc-number">2.</span> <span>Getting Started</span></a></li>
+                    <li><a href="#message"><span class="toc-number">3.</span> <span>My Profile and Message to Reader</span></a></li>
+                    <li><a href="#records"><span class="toc-number">4.</span> <span>Adding Your Records</span></a></li>
+                    <li><a href="#people"><span class="toc-number">5.</span> <span>The Directory: Entities, People, Pets, and Places</span></a></li>
+                    <li><a href="#current"><span class="toc-number">6.</span> <span>Keeping Your Information Current</span></a></li>
+                    <li><a href="#folio"><span class="toc-number">7.</span> <span>Creating Your Folio</span></a></li>
+                    <li><a href="#sharing"><span class="toc-number">8.</span> <span>Sharing and Updating Your Folio and Its Password</span></a></li>
+                    <li><a href="#backup"><span class="toc-number">9.</span> <span>Data Protection</span></a></li>
+                    <li><a href="#privacy"><span class="toc-number">10.</span> <span>Privacy, Security, and Sync</span></a></li>
+                    <li><a href="#deleting"><span class="toc-number">11.</span> <span>Deleting and Restoring</span></a></li>
+                    <li><a href="#settings"><span class="toc-number">12.</span> <span>Customizing Your Experience</span></a></li>
+                    <li><a href="#license"><span class="toc-number">13.</span> <span>Licenses and Limits</span></a></li>
+                    <li><a href="#support"><span class="toc-number">14.</span> <span>Support</span></a></li>
+                </ul>
+            </div>
+
+            <h2 id="welcome">1. Welcome to LegacyFolio</h2>
+            <p>LegacyFolio helps you collect the information, photos, and documents that your executors and substitute decision-makers will need, and brings them together in a <strong>Folio</strong>: a well-organized, password-protected PDF that you share with the people you trust.</p>
+            <p>The people who receive your Folio never need the app. They open your Folio in any regular web browser or PDF reader, using the password you give them.</p>
+            <p>LegacyFolio collects no data and requires no account. Your information stays on your devices and, if you choose to sync, in your private Apple iCloud.</p>
+
+            <h2 id="start">2. Getting Started</h2>
+            <ul>
+                <li><strong>App Password:</strong> LegacyFolio asks you to set an App Password that locks the app. It is stored in your iCloud Keychain and protects LegacyFolio on every device signed in to your iCloud account. You can also turn on Face ID or Touch ID, which asks for your App Password first. If you forget your App Password, LegacyFolio cannot recover it, and reinstalling the app will not reset it, so choose one you will remember.</li>
+                <li><strong>The Essentials:</strong> The Essentials are a personalized list of some of the most important records in your Folio. A few quick questions when you first start help you begin with the Essentials.</li>
+            </ul>
+
+            <h2 id="message">3. My Profile and Message to Reader</h2>
+            <h3>My Profile</h3>
+            <p>My Profile holds your own details. It is the starting point for your Folio.</p>
+            <h3>Message to Reader</h3>
+            <p>Message to Reader is a personal message from you to your Folio recipients, and it is the first page of your Folio.</p>
+
+            <h2 id="records">4. Adding Your Records</h2>
+            <p>Your records are organized into eight categories, listed in the sidebar:</p>
+            <ul>
+                <li><strong>Identity &amp; Official Documents:</strong> passports and IDs, vital records, immigration and visas, professional credentials, licenses and permits, and military service.</li>
+                <li><strong>Dependents &amp; Pets:</strong> minor children, dependent adults, pet care, and other care arrangements.</li>
+                <li><strong>Legal Records:</strong> your will, powers of attorney, trusts, and family law documents.</li>
+                <li><strong>Health &amp; Medical:</strong> medical directives, health insurance, doctors and care team, conditions, medications and allergies, housing and personal care, and organ donation.</li>
+                <li><strong>Finances:</strong> bank accounts, credit cards, investments and retirement, income and benefits, insurance, debts, taxes, and more.</li>
+                <li><strong>Property &amp; Business Interests:</strong> real estate, vehicles, business interests, personal property, secure storage, and property services.</li>
+                <li><strong>Digital Devices &amp; Accounts:</strong> devices, password managers, email, cloud storage, subscriptions, and websites.</li>
+                <li><strong>Wishes &amp; Legacy:</strong> funeral arrangements, notifications, charity, last messages, and sensitive personal items.</li>
+            </ul>
+            <h3>Not Sure Where Something Goes?</h3>
+            <p>Each category has a guide, shown with the information (&#9432;) button, that lists the kinds of records each section can hold.</p>
+            <h3>Basic Details</h3>
+            <p>LegacyFolio displays a small orange dot on any record that is missing basic details your executors or substitute decision-makers will need. You can turn off the dots in Settings. Of course, you should complete as much information as possible.</p>
+            <h3>Photos and PDFs</h3>
+            <p>You can attach photos and PDF documents to your records. Photos are optimized to save space.</p>
+
+            <h2 id="people">5. The Directory: Entities, People, Pets, and Places</h2>
+            <p>The Directory, below the categories in the sidebar, holds <strong>Entities</strong> (such as a law firm, a bank, or another organization), <strong>People</strong>, <strong>Pets</strong>, and <strong>Places</strong>. Enter each one once, and link it to any record that needs it.</p>
+            <p>You can add a person to LegacyFolio by creating a new record or importing a person&rsquo;s details from your Contacts. LegacyFolio only reads Contacts. It never changes them.</p>
+
+            <h2 id="current">6. Keeping Your Information Current</h2>
+            <p>LegacyFolio can help you keep your information current.</p>
+            <ul>
+                <li><strong>Records to Review - Missing Basic Information:</strong> Lists records that are missing basic details.</li>
+                <li><strong>Records to Review - Out of Date:</strong> Lists records you have not updated for 6 months, 1 year, or 2 years. You choose the period in Settings.</li>
+                <li><strong>Contacts Sync:</strong> If you import a person&rsquo;s details from Contacts, LegacyFolio can alert you to any changes to the details in Contacts so you can choose which changes to accept in LegacyFolio. You can turn off Contacts sync in Settings.</li>
+                <li><strong>Review Reminders:</strong> LegacyFolio can send you a notification, on a schedule you choose, to remind you to review your information. The reminder does not check your records. It simply prompts you to look.</li>
+            </ul>
+
+            <h2 id="folio">7. Creating Your Folio</h2>
+            <p>Choose <strong>Create Folio</strong> in the sidebar when you are ready.</p>
+            <ul>
+                <li><strong>Folio Password:</strong> Your Folio is protected by a password. Let LegacyFolio generate a random password, or select your own. A Folio Password you select must be at least 12 characters, using standard letters, numbers, and symbols, with no accented characters. The Folio Password is stored in your iCloud Keychain, and is included in the printable Folio Password Card.</li>
+                <li><strong>Text Size:</strong> Choose how large the text in your Folio should be.</li>
+                <li><strong>Size:</strong> LegacyFolio shows the approximate size of the Folio before it is created.</li>
+                <li><strong>Password Card:</strong> Print a Folio Password Card for your substitute decision-makers and executors. It shows the Folio Password and tells the reader how to open the Folio.</li>
+            </ul>
+            <h3>What Is in Your Folio</h3>
+            <ul>
+                <li>A cover and a table of contents with clickable links.</li>
+                <li>Your Message to Reader, if you have written one.</li>
+                <li>Your records, organized by category, with numbered pages.</li>
+                <li>Your attachments, all included at the end of the Folio.</li>
+            </ul>
+            <h3>Preview Folio</h3>
+            <p>Every record has a <strong>Preview Folio</strong> button that shows the record content that will appear in your Folio. You can hide the Preview Folio button in Settings.</p>
+
+            <h2 id="sharing">8. Sharing and Updating Your Folio and Its Password</h2>
+            <p>You decide when and how to share your Folio and its password.</p>
+            <ul>
+                <li><strong>Together or Separately:</strong> Give someone the Folio and its password at the same time, or at different times, or by different methods. For example, you could send quarterly updates of your Folio to your executors or substitute decision-makers, and leave the Folio Password with your lawyer to share when the time comes.</li>
+                <li><strong>Updating Your Folio:</strong> Create a new Folio whenever your information changes, and give your trusted people the new Folio. Folio updates can use the existing Folio Password.</li>
+                <li><strong>Changing the Folio Password:</strong> You can change your Folio Password at any time, but the new password will apply only to Folios created after the password change. A Folio created using an older password will open with the old password it was created with.</li>
+            </ul>
+            <h3>Ways to Share Your Folio</h3>
+            <p>Your Folio is a standard PDF file, so you can share it the same way you share any other file. LegacyFolio shows the approximate size of your Folio before you create it, which can help you choose a method:</p>
+            <ul>
+                <li><strong>Email:</strong> Attach your Folio to an email. Most email services limit attachments to about 20&ndash;25&nbsp;MB.</li>
+                <li><strong>Mail Drop:</strong> For larger Folios, Apple Mail can send the file using Mail Drop, which uploads it to iCloud and emails a download link. Files up to 5&nbsp;GB can be sent, and the link expires after 30 days, so ask your recipient to download and save the Folio.</li>
+                <li><strong>AirDrop or Messages:</strong> Send your Folio directly to someone nearby with AirDrop, or in a message.</li>
+                <li><strong>Cloud Storage:</strong> Upload your Folio to a service such as iCloud Drive, Dropbox, Google Drive, or OneDrive, and share a link. Anyone with the link can download the Folio, but they still need the Folio Password to open it.</li>
+                <li><strong>USB Drive:</strong> Save your Folio to a USB drive and give it to someone in person, or store it with your important documents.</li>
+                <li><strong>Printed Copy:</strong> Print your Folio and give someone the paper copy. See <a href="#printing">Printing Your Folio</a> below.</li>
+            </ul>
+            <p>For extra protection, give the Folio and its password by different methods. For example, email the Folio and give the password in person or on the printed Folio Password Card.</p>
+            <h3 id="printing">Printing Your Folio</h3>
+            <p>You can print your Folio from any web browser or PDF reader after entering the Folio Password. The pages are numbered, so the table of contents works on paper too. If your Folio will be read on paper, consider choosing a larger text size when you create it.</p>
+            <p>You can give someone a printed Folio instead of an electronic copy, for example someone who prefers to read on paper. A printed Folio is not password-protected, so anyone who has it can read it. Store and share a printed Folio as carefully as your other important documents.</p>
+
+            <h2 id="backup">9. Data Protection</h2>
+            <ul>
+                <li><strong>If You Use iCloud Sync:</strong> Your data is stored in your private Apple iCloud as well as on your devices, and it is there if you replace a device or delete the app. iCloud sync is controlled in your device&rsquo;s Settings.</li>
+                <li><strong>If You Do Not Use iCloud Sync:</strong> Your data exists only on the device where you entered it, so if you delete the app or lose the device your data cannot be recovered unless you have a previously exported Archive.</li>
+            </ul>
+            <h3>Archives</h3>
+            <p>An <strong>Archive</strong> is an encrypted copy of all data in LegacyFolio. It is meant for people who do not use iCloud sync.</p>
+            <ul>
+                <li><strong>Export/Import Archive:</strong> You can export and import an Archive using controls in Settings.</li>
+                <li><strong>Archive Password:</strong> An Archive is protected by its own password. It is separate from your App Password and your Folio Password. It is stored in your iCloud Keychain, so your other devices can make and restore Archives without asking for it. If you forget your Archive Password, LegacyFolio cannot recover it, so choose one you will remember.</li>
+                <li><strong>Only LegacyFolio Opens an Archive:</strong> An Archive can only be imported into LegacyFolio. It cannot be opened using a different app.</li>
+                <li><strong>Importing Adds, Never Replaces:</strong> Importing an Archive adds records that are missing. It never deletes or overwrites what you have.</li>
+                <li><strong>Reminders:</strong> LegacyFolio can remind you to make a new Archive. You can turn the reminders on or off in Settings.</li>
+            </ul>
+
+            <h2 id="privacy">10. Privacy, Security, and Sync</h2>
+            <p>LegacyFolio does not store any data on its own servers, and it never shares anything automatically. Your data stays on your devices and, if you choose to sync, in your private Apple iCloud.</p>
+            <ul>
+                <li><strong>iCloud Sync:</strong> LegacyFolio can sync across all your Apple devices signed in to the same iCloud account, so your information is current on your Mac, iPad, and iPhone. If you would rather not store any data with Apple, turn off iCloud sync for LegacyFolio in your device&rsquo;s iCloud settings. Your information then stays on that device only, so keep your own copies, such as a current Folio or Archive.</li>
+                <li><strong>Encryption:</strong> ID and account numbers, access and recovery codes, seed phrases, medical details, legacy letters, and your Message to Reader are end-to-end encrypted in iCloud. For everything else, Apple holds the keys unless you turn on Apple&rsquo;s Advanced Data Protection (ADP).</li>
+                <li><strong>Advanced Data Protection (ADP):</strong> You can turn on ADP in your device settings to apply end-to-end encryption to all of your iCloud data, so that Apple cannot access it. If you turn on ADP, only you can recover your data. If you lose access to your devices and your recovery method, your data cannot be restored, not even by Apple. Set up a recovery key or recovery contact when you turn on ADP.</li>
+                <li><strong>On a Mac:</strong> iCloud settings protect your data in Apple&rsquo;s iCloud, but not the data stored on your Mac. FileVault encrypts the data on your Mac. You can turn it on in System Settings &gt; Privacy &amp; Security &gt; FileVault. Many newer Macs turn it on automatically.</li>
+                <li><strong>Your Passwords:</strong> LegacyFolio uses three passwords: the App Password, the Archive Password, and the Folio Password. All three are stored in your iCloud Keychain, so they are available on every device signed in to your iCloud account. LegacyFolio cannot recover your passwords, so choose passwords you will remember.</li>
+                <li><strong>Address Search:</strong> When you search for an address, what you type is sent to Apple Maps to find matches.</li>
+                <li><strong>Original Documents:</strong> You can attach photos and PDF documents to each record in LegacyFolio. Legal compliance may require your substitute decision-makers and executors have original documents. You should retain original documents in safekeeping and include information about the storage location in LegacyFolio.</li>
+            </ul>
+
+            <h2 id="deleting">11. Deleting and Restoring</h2>
+            <ul>
+                <li><strong>Recently Deleted:</strong> A record you delete goes to Recently Deleted for 30 days. You can restore it during that time. After 30 days it is permanently deleted.</li>
+                <li><strong>Attachments:</strong> Deleting an attachment is immediate and permanent.</li>
+            </ul>
+
+            <h2 id="settings">12. Customizing Your Experience</h2>
+            <p>You can use Settings to customize your use of LegacyFolio:</p>
+            <ul>
+                <li><strong>General:</strong> Show or hide Preview Folio buttons, The Essentials, and the information (&#9432;) icons that give help and tips.</li>
+                <li><strong>Records to Review:</strong> Choose whether to flag out-of-date records and missing basic details, how long a record can go without an update reminder, and how long Remind Me Later lasts. These settings apply on all of your devices.</li>
+                <li><strong>Review Notification:</strong> Turn on a notification reminder to review LegacyFolio every 3, 6, or 12 months.</li>
+                <li><strong>App Password &amp; Biometrics:</strong> Set, change, or remove your App Password, turn on Face ID or Touch ID, and choose how soon LegacyFolio locks after you leave it.</li>
+                <li><strong>iCloud Sync:</strong> See whether iCloud sync is active.</li>
+                <li><strong>Contacts:</strong> Turn on or off the checking of imported or linked Contacts for changes.</li>
+                <li><strong>Export &amp; Import:</strong> Export or import an Archive, set the Archive Password, and choose Archive reminders. See <a href="#backup">Archives</a>.</li>
+            </ul>
+
+            <h2 id="license">13. Licenses and Limits</h2>
+            <ul>
+                <li><strong>Free Version:</strong> A free license allows creation of a Folio with up to 10 records.</li>
+                <li><strong>Full Version:</strong> A paid license removes the record limit.</li>
+                <li><strong>iCloud Storage &amp; Sync:</strong> iCloud storage and sync capacity is determined by your personal Apple iCloud subscription and available space.</li>
+            </ul>
+
+            <h2 id="support">14. Support</h2>
+            <ul>
+                <li><strong>Frequently Asked Questions:</strong> Find answers to common questions in the <a href="faq.html">FAQ</a>.</li>
+                <li><strong>Contact Us:</strong> Contact technical support by email at <a href="mailto:support@legacyfolioapp.com">support@legacyfolioapp.com</a>.</li>
+                <li><strong>Diagnostic Reports:</strong> Use the “Send Diagnostic File” feature in Settings to create a technical log you can send to technical support.</li>
+            </ul>
+        </main>
+
+        <footer class="footer-nav">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="mailto:support@legacyfolioapp.com?subject=LegacyFolio%20Support%20Request">Contact Support</a>
+        </footer>
+
     </div>
-
-    <h2 id="welcome">1. Welcome to LegacyFolio</h2>
-    <p>LegacyFolio helps you collect the information, photos, and documents that your executors and substitute decision-makers will need, and brings them together in a <strong>Folio</strong>: a well-organized, password-protected PDF that you share with the people you trust.</p>
-    <p> The people who receive your Folio never need the app. They open your Folio in any regular web browser or PDF reader, using the password you give them.</p>
-    <p>LegacyFolio collects no data and requires no account. Your information stays on your devices and, if you choose to sync, in your private Apple iCloud.</p>
-
-    <h2 id="start">2. Getting Started</h2>
-    <ul>
-      <li><strong>App Password:</strong> LegacyFolio asks you to set an App Password that locks the app. It is stored in your iCloud Keychain and protects LegacyFolio on every device signed in to your iCloud account. You can also turn on Face ID or Touch ID, which asks for your App Password first. If you forget your App Password, LegacyFolio cannot recover it, and reinstalling the app will not reset it, so choose one you will remember.</li>
-      <li><strong>The Essentials:</strong> The Essentials are a personalized list of some of the most important records in your Folio. A few quick questions when you first start help you begin with the Essentials.</li>
-    </ul>
-
-    <h2 id="message">3. My Profile and Message to Reader</h2>
-    <h3>My Profile</h3>
-    <p>My Profile holds your own details. It is the starting point for your Folio.</p>
-    <h3>Message to Reader</h3>
-    <p>Message to Reader is a personal message from you to your Folio recipients, and it is the first page of your Folio.</p>
-
-    <h2 id="records">4. Adding Your Records</h2>
-    <p>Your records are organized into eight categories, listed in the sidebar:</p>
-    <ul>
-      <li><strong>Identity &amp; Official Documents:</strong> passports and IDs, vital records, immigration and visas, professional credentials, licenses and permits, and military service.</li>
-      <li><strong>Dependents &amp; Pets:</strong> minor children, dependent adults, pet care, and other care arrangements.</li>
-      <li><strong>Legal Records:</strong> your will, powers of attorney, trusts, and family law documents.</li>
-      <li><strong>Health &amp; Medical:</strong> medical directives, health insurance, doctors and care team, conditions, medications and allergies, housing and personal care, and organ donation.</li>
-      <li><strong>Finances:</strong> bank accounts, credit cards, investments and retirement, income and benefits, insurance, debts, taxes, and more.</li>
-      <li><strong>Property &amp; Business Interests:</strong> real estate, vehicles, business interests, personal property, secure storage, and property services.</li>
-      <li><strong>Digital Devices &amp; Accounts:</strong> devices, password managers, email, cloud storage, subscriptions, and websites.</li>
-      <li><strong>Wishes &amp; Legacy:</strong> funeral arrangements, notifications, charity, last messages, and sensitive personal items.</li>
-    </ul>
-    <h3>Not sure where something goes?</h3>
-    <p>Each category has a guide, shown with the information (&#9432;) button, that lists the kinds of records each section can hold.</p>
-    <h3>Basic Details</h3>
-    <p>LegacyFolio displays a small orange dot to identify missing basic details your executors or substitute decision-makers will need for each record to create. You can turn the dots off using a switch in Settings. Of course, you should complete as much information as possible.</p>
-    <h3>Photos and PDFs</h3>
-    <p>You can attach photos and PDF documents to your records. Photos are optimized to save space.</p>
-
-    <h2 id="people">5. The Directory: Entities, People, Pets, and Places</h2>
-    <p>The Directory, below the categories in the sidebar, holds <strong>Entities</strong> (such as a law firm, a bank, or another organization), <strong>People</strong>, <strong>Pets</strong>, and <strong>Places</strong>. Enter each one once, and link it to any record that needs it.</p>
-    <p>You can add a person to LegacyFolio by creating a new record or importing a person&rsquo;s details from your Contacts. LegacyFolio only reads Contacts. It never changes them.</p>
-
-    <h2 id="current">6. Keeping Your Information Current</h2>
-    <p>LegacyFolio can help you keep your information current.</p>
-    <ul>
-      <li><strong>Records to Review - Missing Basic Information:</strong> Lists records that are missing basic details.</li>
-      <li><strong>Records to Review - Out of Date:</strong> Lists records you have not updated for 6 months, 1 year, or 2 years. You choose the period in Settings.</li>
-      <li><strong>Contacts Sync:</strong> If you import a person&rsquo;s details from Contacts, LegacyFolio can alert you to any changes to the details in Contacts so you can choose which changes to accept in LegacyFolio. A switch in Settings turns Contacts sync off.</li>
- <li><strong>Review reminders:</strong> LegacyFolio can send you a notification, on a schedule you choose, to remind you to review your information. The reminder does not check your records. It simply prompts you to look.</li>
-
-    <h2 id="folio">7. Creating Your Folio</h2>
-    <p>Choose <strong>Create Folio</strong> in the sidebar when you are ready.</p>
-    <ul>
-      <li><strong>Folio Password:</strong> Your Folio is protected by a password. Let LegacyFolio generate a random password, or select your own. A Folio Password you select must be at least 12 characters, using standard letters, numbers, and symbols, with no accented characters. The Folio Password is stored in your iCloud Keychain, and is included in the printable Folio Password Card.</li>
-      <li><strong>Text size:</strong> Choose how large the text in your Folio should be.</li>
-      <li><strong>Size:</strong> LegacyFolio shows the approximate size of the Folio before it is created.</li>
-      <li><strong>Password Card:</strong> Print a Folio Password Card for your substitute decision-makers and executors. It shows the Folio Password and tells the reader how to open the Folio.</li>
-    </ul>
-    <h3>What is in your Folio</h3>
-    <ul>
-      <li>A cover and a table of contents with clickable links.</li>
-      <li>Your Message to Reader, if you have written one.</li>
-      <li>Your records, organized by category, with numbered pages.</li>
-      <li>Your attachments, all included at the end of the Folio.</li>
-    </ul>
-    <h3>Preview Folio</h3>
-    <p>Every record has a <strong>Preview Folio</strong> button that shows the record content that will appear in your Folio. You can hide the Preview Folio button using a switch in Settings.</p>
-
-    <h2 id="sharing">8. Sharing and Updating Your Folio and Its Password</h2>
-    <p>You decide when and how to share your Folio and its password.</p>
-    <ul>
-      <li><strong>Together or separately:</strong> Give someone the Folio and its password at the same time, or at different times, or by different methods. For example, you could send quarterly updates of your Folio to your executors or substitute decision-makers, and leave the Folio Password with your lawyer to share when the time comes.</li>
-      <li><strong>Updating Your Folio:</strong> Create a new Folio whenever your information changes, and give your trusted people the new Folio. Folio updates can use the existing Folio Password.</li>
-      <li><strong>Changing the Folio Password:</strong> You can change your Folio Password at any time, but the new password will apply only to Folios created after the password change. A Folio created using an older password will open with old password it was created with.</li>
-    </ul>
-
-    <h2 id="backup">9. Data Protection</h2>
-    <ul>
-      <li><strong>If you use iCloud sync: </strong> Your data is stored in your private Apple iCloud as well as on your devices, and it is there if you replace a device or delete the app. iCloud sync is controlled in your device&rsquo;s Settings.</li>
-      <li><strong>If you do not use iCloud sync:</strong> Your data exists only on the device where you entered it, so if you delete the app or lose the device your data cannot be recovered unless you have a previously exported Archive.</li>
-    </ul>
-    <h3>Archives</h3>
-    <p>An <strong>Archive</strong> is an encrypted copy of all data in LegacyFolio. It is meant for people who do not use iCloud sync.</p>
-    <ul>
-      <li><strong>Export/Import Archive:</strong> You can export and import an Archive using controls in Settings.</li>
-      <li><strong>Archive Password:</strong> An Archive is protected by its own password. It is separate from your App Password and your Folio Password. It is stored in your iCloud Keychain, so your other devices can make and restore Archives without asking for it. If you forget your Archive Password, LegacyFolio cannot recover it, so choose one you will remember.</li>
-      <li><strong>Only LegacyFolio opens an Archive:</strong> An Archive can only be imported into LegacyFolio. It cannot be opened using a different app.</li>
-      <li><strong>Importing adds, never replaces:</strong> Importing an Archive adds records that are missing. It never deletes or overwrites what you have.</li>
-      <li><strong>Reminders:</strong> LegacyFolio can remind you to make a new Archive. You can control the reminders using a switch in Settings.</li>
-    </ul>
-
-    <h2 id="privacy">10. Privacy, Security, and Sync</h2>
-    <p>LegacyFolio does not store any data on its own servers, and it never shares anything automatically. Your data stays on your devices and, if you choose to sync, in your private Apple iCloud.</p>
-    <ul>
-      <li><strong>iCloud sync:</strong> LegacyFolio can sync across all your Apple devices signed in to the same iCloud account, so your information is current on your Mac, iPad, and iPhone. If you would rather not store any data with Apple, turn off iCloud sync for LegacyFolio in your device&rsquo;s iCloud settings. Your information then stays on that device only, so keep your own copies, such as a current Folio or Archive.</li>
-      <li><strong>Encryption:</strong> ID and account numbers, access and recovery codes, seed phrases, medical details, legacy letters, and your Message to Reader are end-to-end encrypted in iCloud. For everything else, Apple holds the keys unless you turn on Apple&rsquo;s Advanced Data Protection (ADP).</li>
-      <li><strong>Advanced Data Protection (ADP):</strong> You can turn on ADP in your device settings to apply end-to-end encryption to all of your iCloud data, so that Apple cannot access it. If you turn on ADP, only you can recover your data. If you lose access to your devices and your recovery method, your data cannot be restored, not even by Apple. Set up a recovery key or recovery contact when you turn on ADP.</li>
-      <li><strong>On a Mac:</strong> iCloud settings protect your data in Apple&rsquo;s iCloud, but not the data stored on your Mac. FileVault encrypts the data on your Mac. You can turn it on in System Settings &gt; Privacy &amp; Security &gt; FileVault. Many newer Macs turn it on automatically.</li>
-      <li><strong>Your passwords:</strong> LegacyFolio uses three passwords: the App Password, the Archive Password, and the Folio Password. All three are stored in your iCloud Keychain, so they are available on every device signed in to your iCloud account. LegacyFolio cannot recover your passwords, so choose passwords you will remember.</li>
-      <li><strong>Address search:</strong> When you search for an address, what you type is sent to Apple Maps to find matches.</li>
-      <li><strong>Original documents:</strong> You can attach photos and PDF documents to each record in LegacyFolio. Legal compliance may require your substitute decision-makers and executors have original documents. You should retain original documents in safekeeping and include information about the storage location in LegacyFolio.</li>
-    </ul>
-
-<h2 id="deleting">11. Deleting and Restoring</h2>
-    <ul>
-      <li><strong>Recently Deleted:</strong> A record you delete goes to Recently Deleted for 30 days. You can restore it during that time. After 30 days it is permanently deleted.</li>
-      <li><strong>Attachments:</strong> Deleting an attachment is immediate and permanent.</li>
-    </ul>
-
-    <h2 id="settings">12. Customizing Your Experience</h2>
-    <p>You can use Settings to customize your use of LegacyFolio:</p>
-    <ul>
-      <li><strong>General:</strong> Show or hide Preview Folio buttons, The Essentials, and the information (&#9432;) icons that give help and tips.</li>
-      <li><strong>Records to Review:</strong> Choose whether to flag out-of-date records and missing basic details, how long a record can go without an update reminder, and how long Remind Me Later lasts. These settings apply on all of your devices.</li>
-      <li><strong>Review notification:</strong> Turn on a notification reminder to review LegacyFolio every 3, 6, or 12 months.</li>
-      <li><strong>App Password &amp; Biometrics:</strong> Set, change, or remove your App Password, turn on Face ID or Touch ID, and choose how soon LegacyFolio locks after you leave it.</li>
-      <li><strong>iCloud Sync:</strong> See whether iCloud sync is active.</li>
-      <li><strong>Contacts:</strong> Turn on or off the checking of imported or linked Contacts for changes.</li>
-      <li><strong>Export &amp; Import:</strong> Export or import an Archive, set the Archive Password, and choose Archive reminders. See <a href="#backup">Archives</a>.</li>
-    </ul>
-
-    <h2 id="license">13. Licenses and Limits</h2>
-    <ul>
-      <li><strong>Free version:</strong> A free license allows creation of a Folio with up to 10 records.</li>
-      <li><strong>Full version:</strong> A paid license removes the record limit.</li>
-      <li><strong>iCloud Storage & Sync:</strong> iCloud storage and sync capacity is determined by your personal Apple iCloud subscription and available space.</li>
-    </ul>
-
-    <h2 id="support">14. Support</h2>
-    <ul>
-      <li><strong>Contact us:</strong> Contact technical support by email at <a href="mailto:support@legacyfolioapp.com">support@legacyfolioapp.com</a>.</li>
-      <li><strong> Diagnostic Reports: </strong> Use the “Send Diagnostic File” feature in Settings to create a technical log you can send to technical support.</li>
-    </ul>
-    </main>
-
-    <footer class="footer-nav">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="mailto:support@legacyfolioapp.com?subject=LegacyFolio%20Support%20Request">Contact Support</a>
-    </footer>
-    
-</div>
     <script src="nav.js"></script>
 </body>
 </html>

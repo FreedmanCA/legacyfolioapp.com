@@ -6,30 +6,31 @@
     <meta name="color-scheme" content="light dark">
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
-    <title>LegacyFolio | Everything they need, when they need it.</title>
+    <title>LegacyFolio – Estate Organizer for iPhone, iPad, and Mac</title>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon-96x96.png" type="image/png" sizes="96x96">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-    <meta name="description" content="LegacyFolio is a private and secure way to organize the information, documents, and wishes your substitute decision-makers and executors may need to manage your affairs and estate. For iPhone, iPad, and Mac.">
+    <meta name="description" content="A private estate organizer and digital legacy binder for iPhone, iPad, and Mac. Gather what your executors need into one password-protected Folio.">
     <meta name="author" content="Nekudot Design Limited">
     <link rel="canonical" href="https://legacyfolioapp.com/">
     <meta name="robots" content="index, follow, max-image-preview:large">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="LegacyFolio">
-    <meta property="og:title" content="LegacyFolio | Everything they need, when they need it.">
-    <meta property="og:description" content="A private and secure way to organize the information, documents, and wishes your substitute decision-makers and executors may need to manage your affairs and estate.">
-    <meta property="og:image" content="https://legacyfolioapp.com/OGImage.webp">
+    <meta property="og:title" content="LegacyFolio – Estate Organizer for iPhone, iPad, and Mac">
+    <meta property="og:description" content="A private estate organizer and digital legacy binder for iPhone, iPad, and Mac. Gather what your executors need into one password-protected Folio.">
+    <meta property="og:image" content="https://legacyfolioapp.com/OGImage.jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="LegacyFolio on a Mac, an iPad, and an iPhone, showing a will record.">
     <meta property="og:url" content="https://legacyfolioapp.com/">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LegacyFolio | Everything they need, when they need it.">
-    <meta name="twitter:description" content="A private and secure way to organize the information, documents, and wishes your substitute decision-makers and executors may need to manage your affairs and estate.">
-    <meta name="twitter:image" content="https://legacyfolioapp.com/OGImage.webp">
-    <meta name="twitter:url" content="https://legacyfolioapp.com/">
+    <meta name="twitter:title" content="LegacyFolio – Estate Organizer for iPhone, iPad, and Mac">
+    <meta name="twitter:description" content="A private estate organizer and digital legacy binder for iPhone, iPad, and Mac. Gather what your executors need into one password-protected Folio.">
+    <meta name="twitter:image" content="https://legacyfolioapp.com/OGImage.jpeg">
+    <meta name="twitter:image:alt" content="LegacyFolio on a Mac, an iPad, and an iPhone, showing a will record.">
 
     <script type="application/ld+json">
     {
@@ -37,7 +38,7 @@
       "@type": "SoftwareApplication",
       "name": "LegacyFolio",
       "url": "https://legacyfolioapp.com/",
-      "image": "https://legacyfolioapp.com/hero.webp",
+      "image": "https://legacyfolioapp.com/hero-2400.webp",
       "operatingSystem": "iOS, iPadOS, macOS",
       "applicationCategory": "ProductivityApplication",
       "offers": [
@@ -61,13 +62,27 @@
       "featureList": [
         "Private by design",
         "No account required",
-	"Password-protected PDF Folio that opens in any browser or PDF reader",
+        "Password-protected PDF Folio that opens in any browser or PDF reader",
         "No LegacyFolio cloud and no third-party data storage",
         "Optional private iCloud sync across iPhone, iPad, and Mac",
         "Reminders to review your records periodically"
       ],
       "softwareVersion": "1.0",
       "inLanguage": "en"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "LegacyFolio",
+      "url": "https://legacyfolioapp.com/",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nekudot Design Limited"
+      }
     }
     </script>
 
@@ -161,12 +176,6 @@
             margin: 0 0 16px;
         }
 
-        .hero-content p.hero-note {
-            font-size: 17px;
-            font-weight: 400;
-            margin: 14px 0 0;
-        }
-
         .cta-buttons {
             display: flex;
             flex-wrap: wrap;
@@ -179,26 +188,6 @@
             height: auto;
             display: block;
         }
-
-        /* --- Image placeholders (replace with real screenshots) --- */
-        .placeholder {
-            width: 100%;
-            aspect-ratio: 3 / 2;
-            background: var(--bg-light);
-            border: 1px solid var(--border-color);
-            border-radius: 18px;
-            display: grid;
-            place-items: center;
-            text-align: center;
-            padding: 24px;
-            box-sizing: border-box;
-            color: var(--text-secondary);
-            font-size: 13px;
-            font-weight: 500;
-            letter-spacing: 0.04em;
-        }
-
-        .placeholder.tall { aspect-ratio: 1 / 1; }
 
         /* --- APP STORE BADGES --- */
         .store-badge {
@@ -299,7 +288,7 @@
             transform-origin: 50% 51%;
         }
 
-        /* Paper texture overlay (same settings as StudioMemory) */
+        /* Paper texture overlay */
         .paper-texture-wrapper {
             position: relative;
             display: block;
@@ -318,16 +307,6 @@
             opacity: 0.02;
             background-image: url('paper-fibers.png');
             mix-blend-mode: soft-light;
-        }
-
-        .section-eyebrow {
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--text-main);
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            display: block;
-            margin-bottom: 8px;
         }
 
         .section-headline {
@@ -351,8 +330,6 @@
             color: var(--text-main);
             font-weight: 600;
         }
-
-        .feature-copy p.tagline { font-style: italic; }
 
         .emph { color: var(--text-main); font-weight: 600; }
 
@@ -506,8 +483,6 @@
 
         .footer-cta .cta-buttons { justify-content: center; }
 
-        .footer-cta p.fine-print { font-size: 14px; margin-top: 16px; }
-
         .footer-nav {
             margin-top: 40px;
             display: flex;
@@ -569,7 +544,7 @@
 
     <nav>
         <a href="index.html" class="logo-container">
-            <img src="AppIcon.webp" alt="LegacyFolio Logo" class="logo-img">
+            <img src="AppIcon.webp" alt="" class="logo-img">
             <span>Legacy<span class="logo-folio">Folio</span>™</span>
         </a>
 
@@ -604,7 +579,7 @@
             </div>
             <div class="hero-image">
                 <button type="button" class="gallery-trigger" aria-label="View larger image: LegacyFolio on iPhone, iPad, and Mac">
-                    <img src="hero.webp" width="6000" height="4000" fetchpriority="high" loading="eager" class="hero-img" alt="" data-full-alt="LegacyFolio on a Mac, an iPad, and an iPhone, showing a will record, with the category list in the sidebar.">
+                    <img src="hero-1600.webp" srcset="hero-800.webp 800w, hero-1600.webp 1600w, hero-2400.webp 2400w" sizes="(max-width: 1024px) 84vw, 550px" data-full-src="hero-2400.webp" width="2400" height="1600" fetchpriority="high" loading="eager" class="hero-img" alt="" data-full-alt="LegacyFolio on a Mac, an iPad, and an iPhone, showing a will record, with the category list in the sidebar.">
                 </button>
             </div>
         </section>
@@ -614,7 +589,7 @@
             <div class="feature-inner">
                 <div class="feature-copy">
                     <h2 class="section-headline">Put everything in one place, for the people you trust.</h2>
-                    <p>LegacyFolio helps you identify and organize the important information, photos, and documents your substitute decision-makers and executors will need to manage your affairs and estate.</p>
+                    <p>LegacyFolio is a private estate organizer that helps you identify and organize the important information, photos, and documents your executors and substitute decision-makers, such as the people named in your powers of attorney, will need to manage your affairs and estate. Think of it as a digital legacy binder: everything they need to know, in one secure place.</p>
                     <p class="key-line">Accounts. Insurance. Property. Medical details. Legal documents. Passwords. Final wishes.</p>
                     <p>LegacyFolio can gently remind you to keep your Folio current, and flag records that might be out of date.</p>
                     <p>When you&rsquo;re ready, LegacyFolio creates your Folio: a well-organized, password-protected PDF document that you can share with the people you trust when and how you choose.</p>
@@ -622,7 +597,7 @@
                 </div>
                 <div class="feature-visual">
                     <button type="button" class="gallery-trigger" aria-label="View larger image: sample Folio pages">
-                        <img src="folio.webp" width="6000" height="6000" loading="lazy" class="feature-image" alt="" data-full-alt="Sample pages from a LegacyFolio Folio: the cover, the table of contents, an owner profile page, and a will page.">
+                        <img src="folio-1600.webp" srcset="folio-800.webp 800w, folio-1600.webp 1600w, folio-2400.webp 2400w" sizes="(max-width: 1024px) 84vw, 520px" data-full-src="folio-2400.webp" width="2400" height="2400" loading="lazy" class="feature-image" alt="" data-full-alt="Sample pages from a LegacyFolio Folio: the cover, the table of contents, an owner profile page, and a will page.">
                     </button>
                 </div>
             </div>
@@ -640,9 +615,9 @@
                 </div>
                 <div class="feature-visual">
                     <button type="button" class="gallery-trigger" aria-label="View larger image: Folio password card">
-                        <div class="paper-texture-wrapper framed">
-                            <img src="password.webp" width="6000" height="4000" loading="lazy" class="feature-image fill-frame" alt="" data-full-alt="A LegacyFolio password card showing a sample Folio password.">
-                        </div>
+                        <span class="paper-texture-wrapper framed">
+                            <img src="password-1600.webp" srcset="password-800.webp 800w, password-1600.webp 1600w, password-2400.webp 2400w" sizes="(max-width: 1024px) 110vw, 680px" data-full-src="password-2400.webp" width="2400" height="1600" loading="lazy" class="feature-image fill-frame" alt="" data-full-alt="A LegacyFolio password card showing a sample Folio password.">
+                        </span>
                     </button>
                 </div>
             </div>
@@ -656,17 +631,17 @@
             <div class="info-cards">
                 <div class="info-card">
                     <svg class="info-icon" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3" /></svg>
-                    <h3>Private by Design.</h3>
-                    <p>Your data stays on your devices and, if you choose to sync, in your private Apple iCloud. We never access or store your information, photos, or documents. </p>
+                    <h3>Private by design.</h3>
+                    <p>Your data stays on your devices and, if you choose to sync, in your private Apple iCloud. We never access or store your information, photos, or documents.</p>
                 </div>
                 <div class="info-card">
                     <svg class="info-icon" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                    <h3>Yours to Keep.</h3>
+                    <h3>Yours to keep.</h3>
                     <p>Your Folio is a standard, password-protected PDF file. It opens in any web browser or PDF reader, today and years from now, without using the LegacyFolio app.</p>
                 </div>
                 <div class="info-card">
                     <svg class="info-icon" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V5z" /><path stroke-linecap="round" stroke-linejoin="round" d="M6 20h8M10 17v3" /><rect x="13" y="8" width="7" height="10" rx="1" stroke="currentColor" style="fill:var(--info-card-bg)" /><rect x="18" y="12" width="4" height="7" rx="0.5" stroke="currentColor" style="fill:var(--info-card-bg)" /></svg>
-                    <h3>One License, All Devices.</h3>
+                    <h3>One license, all devices.</h3>
                     <p>One universal license lets you use LegacyFolio on your iPhone, iPad, and Mac.</p>
                 </div>
             </div>
@@ -675,7 +650,7 @@
         <!-- Testimonials -->
         <section class="testimonials" id="testimonials">
             <div class="section-header">
-                <h2 class="section-headline">What people are saying</h2>
+                <h2 class="section-headline">What people are saying.</h2>
             </div>
             <div class="quotes">
                 <figure class="quote-card">
@@ -693,29 +668,30 @@
             </div>
         </section>
 
-        <footer>
-            <div class="footer-cta">
-                <h2>Create a simple Folio for free.</h2>
-                <p>Use LegacyFolio to create a Folio with up to 10 records, free for as long as you like.</p>
-                <p>Purchase a one-time license to remove the record limit. No annual fee.</p>
-                <div class="cta-buttons">
-                    <a href="#" aria-label="Download free on the App Store">
-                        <img src="app-store-badge.svg" alt="Download on the App Store" class="store-badge">
-                    </a>
-                    <a href="#" aria-label="Download free on the Mac App Store">
-                        <img src="mac-app-store-badge.svg" alt="Download on the Mac App Store" class="store-badge">
-                    </a>
-                </div>
-            </div>
-            <div class="footer-nav">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="mailto:support@legacyfolioapp.com?subject=LegacyFolio%20Support%20Request">Contact Support</a>
-            </div>
-        </footer>
     </main>
 
+    <footer>
+        <div class="footer-cta">
+            <h2>Create a simple Folio for free.</h2>
+            <p>Use LegacyFolio to create a Folio with up to 10 records, free for as long as you like.</p>
+            <p>Purchase a one-time license to remove the record limit. No annual fee.</p>
+            <div class="cta-buttons">
+                <a href="#" aria-label="Download free on the App Store">
+                    <img src="app-store-badge.svg" alt="Download on the App Store" class="store-badge">
+                </a>
+                <a href="#" aria-label="Download free on the Mac App Store">
+                    <img src="mac-app-store-badge.svg" alt="Download on the Mac App Store" class="store-badge">
+                </a>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="mailto:support@legacyfolioapp.com?subject=LegacyFolio%20Support%20Request">Contact Support</a>
+        </div>
+    </footer>
+
     <dialog class="lightbox" id="lightbox" aria-label="Enlarged image view">
-        <img src="" alt="" id="lightbox-img">
+        <img alt="" id="lightbox-img">
     </dialog>
 
     <script src="script.js" defer></script>
