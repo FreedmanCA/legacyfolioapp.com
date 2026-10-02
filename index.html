@@ -150,12 +150,12 @@
 
         .hero-content {
             flex: 0 0 auto;
-            width: 45%;
+            width: 50%;
             animation: fadeInUp 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) both;
         }
 
         .hero-image {
-            width: 50%;
+            width: 46%;
             animation: fadeInUp 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) both;
         }
 
@@ -174,6 +174,16 @@
             line-height: 1.55;
             color: var(--text-main);
             margin: 0 0 16px;
+        }
+
+        @media (min-width: 1025px) {
+            .hero-content h1 + p { white-space: nowrap; }
+        }
+
+        .hero-content p.hero-sub {
+            font-size: clamp(18px, 2.2vw, 23px);
+            font-weight: 400;
+            color: color-mix(in srgb, var(--text-main) 70%, transparent);
         }
 
         .cta-buttons {
@@ -215,6 +225,13 @@
             grid-template-columns: 1fr 1fr;
             gap: 60px;
             align-items: center;
+        }
+
+        /* The Folio section: narrower image column so the heading fits on one line */
+        @media (min-width: 1025px) {
+            #folio .feature-inner { grid-template-columns: 1fr 2fr; }
+            #folio .section-headline { white-space: nowrap; }
+            #control .feature-inner { grid-template-columns: 2fr 1fr; }
         }
 
         .feature.reverse .feature-copy { order: 2; }
@@ -566,7 +583,8 @@
         <section class="hero">
             <div class="hero-content">
                 <h1>Everything they need,<br>when they need it.</h1>
-                <p><span class="nowrap">Private by design.</span> <span class="nowrap">No account required.</span></p>
+                <p><span class="nowrap">A digital legacy binder</span> <span class="nowrap">and end-of-life planner.</span></p>
+                <p class="hero-sub"><span class="nowrap">Private by design.</span> <span class="nowrap">No account required.</span></p>
                 <div class="cta-buttons">
                     <!-- TODO: replace # with the LegacyFolio App Store URL -->
                     <a href="#" aria-label="Download free on the App Store">
@@ -588,11 +606,11 @@
         <section class="feature alt reverse" id="folio">
             <div class="feature-inner">
                 <div class="feature-copy">
-                    <h2 class="section-headline">Put everything in one place, for the people you trust.</h2>
-                    <p>LegacyFolio helps you identify and organize the important information, photos, and documents your substitute decision-makers and executors will need to manage your affairs and estate.</p>
-                    <p class="key-line">Accounts. Insurance. Property. Medical details. Legal documents. Passwords. Final wishes.</p>
-                    <p>LegacyFolio can gently remind you to keep your Folio current, and flag records that might be out of date.</p>
-                    <p>When you&rsquo;re ready, LegacyFolio creates your Folio: a well-organized, password-protected PDF document that you can share with the people you trust when and how you choose.</p>
+                    <h2 class="section-headline">Create your Folio for the people you trust.</h2>
+                    <p>LegacyFolio is a digital legacy binder and end-of-life planner that helps you identify and organize the important information, photos, and documents your substitute decision-makers and executors will need to manage your affairs and estate.</p>
+                    <p class="key-line">Official records. Legal documents. Health and medical information. Finances. Property and business interests. Digital devices and accounts. Final wishes and legacy instructions.</p>
+                    <p>LegacyFolio can gently remind you to keep your records current, and flag records that might be out of date.</p>
+                    <p>When you&rsquo;re ready, LegacyFolio creates <span class="emph">your Folio</span>: a well-organized, password-protected PDF document that you can share with the people you trust when and how you choose.</p>
                     <p><span class="emph">Your Folio recipients don&rsquo;t need the LegacyFolio app to read your Folio.</span> They can open it using any regular web browser or PDF reader with the password you provide.</p>
                 </div>
                 <div class="feature-visual">
@@ -611,7 +629,7 @@
                     <p>You choose what goes in your Folio, including photos and PDF documents.</p>
                     <p>You update and share your Folio as often as you like, with the same password or a different one.</p>
                     <p>You choose when and how to share your Folio and its password, together or separately.</p>
-                    <p>For example, you could send quarterly updates of your Folio to your executors or substitute decision-makers, and leave the password with your lawyer to share when the time comes.</p>
+                    <p>For example, send quarterly Folio updates to your executors, and leave the password with your lawyer until it&rsquo;s needed.</p>
                 </div>
                 <div class="feature-visual">
                     <button type="button" class="gallery-trigger" aria-label="View larger image: Folio password card">
