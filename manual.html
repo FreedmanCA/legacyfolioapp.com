@@ -47,6 +47,8 @@
 
         /* Nav, hamburger menu, and mobile overlay are in shared.css */
 
+        :root { --content-width: 800px; }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -187,8 +189,8 @@
             </div>
 
             <h2 id="welcome">1. Welcome to LegacyFolio</h2>
-            <p>LegacyFolio helps you collect the information, photos, and documents that your executors and substitute decision-makers will need, and brings them together in a <strong>Folio</strong>: a well-organized, password-protected PDF that you share with the people you trust.</p>
-            <p>The people who receive your Folio never need the app. They open your Folio in any regular web browser or PDF reader, using the password you give them.</p>
+            <p>LegacyFolio is a digital legacy binder and end-of-life planner that helps you collect the information, photos, and documents that your executors and substitute decision-makers will need, and brings them together in your <strong>Folio</strong>: a well-organized, password-protected PDF file that you share with the people you trust.</p>
+            <p>The people who receive your Folio never need the LegacyFolio app. They open your Folio in any regular web browser or PDF reader, using the password you give them.</p>
             <p>LegacyFolio collects no data and requires no account. Your information stays on your devices and, if you choose to sync, in your private Apple iCloud.</p>
 
             <h2 id="start">2. Getting Started</h2>
@@ -220,7 +222,7 @@
             <h3>Basic Details</h3>
             <p>LegacyFolio displays a small orange dot on any record that is missing basic details your executors or substitute decision-makers will need. You can turn off the dots in Settings. Of course, you should complete as much information as possible.</p>
             <h3>Photos and PDFs</h3>
-            <p>You can attach photos and PDF documents to your records. Photos are optimized to save space.</p>
+            <p>You can attach photos and PDF documents to your records. Photos and PDFs are optimized to save space.</p>
 
             <h2 id="people">5. The Directory: Entities, People, Pets, and Places</h2>
             <p>The Directory, below the categories in the sidebar, holds <strong>Entities</strong> (such as a law firm, a bank, or another organization), <strong>People</strong>, <strong>Pets</strong>, and <strong>Places</strong>. Enter each one once, and link it to any record that needs it.</p>
@@ -240,7 +242,7 @@
             <ul>
                 <li><strong>Folio Password:</strong> Your Folio is protected by a password. Let LegacyFolio generate a random password, or select your own. A Folio Password you select must be at least 12 characters, using standard letters, numbers, and symbols, with no accented characters. The Folio Password is stored in your iCloud Keychain, and is included in the printable Folio Password Card.</li>
                 <li><strong>Text Size:</strong> Choose how large the text in your Folio should be.</li>
-                <li><strong>Size:</strong> LegacyFolio shows the approximate size of the Folio before it is created.</li>
+                <li><strong>Size:</strong> LegacyFolio shows the maximum size of the Folio before it is created.</li>
                 <li><strong>Password Card:</strong> Print a Folio Password Card for your substitute decision-makers and executors. It shows the Folio Password and tells the reader how to open the Folio.</li>
             </ul>
             <h3>What Is in Your Folio</h3>
@@ -261,7 +263,7 @@
                 <li><strong>Changing the Folio Password:</strong> You can change your Folio Password at any time, but the new password will apply only to Folios created after the password change. A Folio created using an older password will open with the old password it was created with.</li>
             </ul>
             <h3>Ways to Share Your Folio</h3>
-            <p>Your Folio is a standard PDF file, so you can share it the same way you share any other file. LegacyFolio shows the approximate size of your Folio before you create it, which can help you choose a method:</p>
+            <p>Your Folio is a standard PDF file, so you can share it the same way you share any other file. LegacyFolio shows the maximum size of your Folio before you create it, which can help you choose a method:</p>
             <ul>
                 <li><strong>Email:</strong> Attach your Folio to an email. Most email services limit attachments to about 20&ndash;25&nbsp;MB.</li>
                 <li><strong>Mail Drop:</strong> For larger Folios, Apple Mail can send the file using Mail Drop, which uploads it to iCloud and emails a download link. Files up to 5&nbsp;GB can be sent, and the link expires after 30 days, so ask your recipient to download and save the Folio.</li>
@@ -286,15 +288,15 @@
                 <li><strong>Export/Import Archive:</strong> You can export and import an Archive using controls in Settings.</li>
                 <li><strong>Archive Password:</strong> An Archive is protected by its own password. It is separate from your App Password and your Folio Password. It is stored in your iCloud Keychain, so your other devices can make and restore Archives without asking for it. If you forget your Archive Password, LegacyFolio cannot recover it, so choose one you will remember.</li>
                 <li><strong>Only LegacyFolio Opens an Archive:</strong> An Archive can only be imported into LegacyFolio. It cannot be opened using a different app.</li>
-                <li><strong>Importing Adds, Never Replaces:</strong> Importing an Archive adds records that are missing. It never deletes or overwrites what you have.</li>
+                <li><strong>Importing Adds, Never Replaces:</strong> Importing an Archive adds records that are missing and fills in blank details. It never deletes or overwrites what you have in LegacyFolio.</li>
                 <li><strong>Reminders:</strong> LegacyFolio can remind you to make a new Archive. You can turn the reminders on or off in Settings.</li>
             </ul>
 
             <h2 id="privacy">10. Privacy, Security, and Sync</h2>
-            <p>LegacyFolio does not store any data on its own servers, and it never shares anything automatically. Your data stays on your devices and, if you choose to sync, in your private Apple iCloud.</p>
+            <p>LegacyFolio does not process or store any data on its own servers, and it never shares anything automatically. Your data stays on your devices and, if you choose to sync, in your private Apple iCloud.</p>
             <ul>
                 <li><strong>iCloud Sync:</strong> LegacyFolio can sync across all your Apple devices signed in to the same iCloud account, so your information is current on your Mac, iPad, and iPhone. If you would rather not store any data with Apple, turn off iCloud sync for LegacyFolio in your device&rsquo;s iCloud settings. Your information then stays on that device only, so keep your own copies, such as a current Folio or Archive.</li>
-                <li><strong>Encryption:</strong> ID and account numbers, access and recovery codes, seed phrases, medical details, legacy letters, and your Message to Reader are end-to-end encrypted in iCloud. For everything else, Apple holds the keys unless you turn on Apple&rsquo;s Advanced Data Protection (ADP).</li>
+                <li><strong>Encryption:</strong> ID and account numbers, access and recovery codes, seed phrases, medical details (not pet health details), legacy letters, and your Message to Reader are end-to-end encrypted in iCloud. For everything else, Apple holds the keys unless you turn on Apple&rsquo;s Advanced Data Protection (ADP).</li>
                 <li><strong>Advanced Data Protection (ADP):</strong> You can turn on ADP in your device settings to apply end-to-end encryption to all of your iCloud data, so that Apple cannot access it. If you turn on ADP, only you can recover your data. If you lose access to your devices and your recovery method, your data cannot be restored, not even by Apple. Set up a recovery key or recovery contact when you turn on ADP.</li>
                 <li><strong>On a Mac:</strong> iCloud settings protect your data in Apple&rsquo;s iCloud, but not the data stored on your Mac. FileVault encrypts the data on your Mac. You can turn it on in System Settings &gt; Privacy &amp; Security &gt; FileVault. Many newer Macs turn it on automatically.</li>
                 <li><strong>Your Passwords:</strong> LegacyFolio uses three passwords: the App Password, the Archive Password, and the Folio Password. All three passwords are stored in your iCloud Keychain, so they are available on every device signed in to your iCloud account. LegacyFolio cannot recover your passwords, so choose passwords you will remember.</li>
@@ -311,14 +313,14 @@
             <h2 id="settings">12. Customizing Your Experience</h2>
             <p>You can use Settings to customize your use of LegacyFolio:</p>
             <ul>
-                <li><strong>General:</strong> Show or hide Preview Folio buttons, The Essentials, and the information (&#9432;) icons that give help and tips.</li>
-                <li><strong>Records to Review:</strong> Choose whether to flag out-of-date records and missing basic details, how long a record can go without an update reminder, and how long Remind Me Later lasts. These settings apply on all of your devices.</li>
+                <li><strong>General:</strong> Show or hide Preview Folio buttons, The Essentials, and the information (&#9432;) icons. On iPhone, turn haptics on or off.</li>
+                <li><strong>Records to Review:</strong> Choose whether to flag out-of-date records and missing basic details, how long a record can go without an update reminder, and how long Remind Me Later lasts. If you use iCloud sync, these settings will sync to all of your devices.</li>
                 <li><strong>Review Notification:</strong> Turn on a notification reminder to review LegacyFolio every 3, 6, or 12 months.</li>
                 <li><strong>App Password &amp; Biometrics:</strong> Set, change, or remove your App Password, turn on Face ID or Touch ID, and choose how soon LegacyFolio locks after you leave it.</li>
                 <li><strong>iCloud Sync:</strong> See whether iCloud sync is active.</li>
                 <li><strong>Contacts:</strong> Turn on or off the checking of imported or linked Contacts for changes.</li>
                 <li><strong>Address Search:</strong> Turn address search on or off. When it is on, what you type in an address search is sent to Apple Maps.</li>
-                <li><strong>Export &amp; Import:</strong> Export or import an Archive, set the Archive Password, and choose Archive reminders. See <a href="#backup">Archives</a>.</li>
+                <li><strong>Archive:</strong> Export or import an Archive, set the Archive Password, and choose Archive reminders. See <a href="#backup">Archives</a>.</li>
             </ul>
 
             <h2 id="license">13. Licenses and Limits</h2>

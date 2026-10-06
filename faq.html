@@ -48,6 +48,8 @@
         /* Nav, hamburger menu, and mobile overlay are in shared.css */
 
         /* Container */
+        :root { --content-width: 680px; }
+
         .container {
             max-width: 680px;
             margin: 0 auto;
@@ -56,9 +58,7 @@
 
         header {
             text-align: center;
-            margin-bottom: 60px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
+            margin-bottom: 40px;
         }
 
         h1 {
@@ -72,10 +72,8 @@
             font-size: 28px;
             font-weight: 600;
             letter-spacing: -0.007em;
-            margin-top: 40px;
+            margin-top: 56px;
             margin-bottom: 24px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 8px;
         }
 
         .faq-item {
@@ -143,12 +141,6 @@
 
         a:hover {
             text-decoration: underline;
-        }
-
-        hr {
-            border: 0;
-            border-top: 1px solid var(--border-color);
-            margin: 40px 0;
         }
 
         /* Unified Footer Navigation */
@@ -245,8 +237,6 @@
                 </div>
             </section>
 
-            <hr>
-
             <section>
                 <h2>Privacy and Security</h2>
 
@@ -262,7 +252,7 @@
 
                 <div class="faq-item">
                     <h3>Is my information encrypted?</h3>
-                    <p>ID and account numbers, access and recovery codes, seed phrases, medical details, legacy letters, and your Message to Reader are end-to-end encrypted in iCloud. For everything else, Apple holds the keys unless you turn on Apple&rsquo;s Advanced Data Protection (ADP).</p>
+                    <p>ID and account numbers, access and recovery codes, seed phrases, medical details (not pet health details), legacy letters, and your Message to Reader are end-to-end encrypted in iCloud. For everything else, Apple holds the keys unless you turn on Apple&rsquo;s Advanced Data Protection (ADP).</p>
                     <p>On a Mac, turn on FileVault to encrypt the data stored on the Mac itself. You can find it in System Settings &gt; Privacy &amp; Security &gt; FileVault. Many newer Macs turn it on automatically.</p>
                 </div>
 
@@ -288,11 +278,9 @@
 
                 <div class="faq-item">
                     <h3>Does LegacyFolio change my Contacts?</h3>
-                    <p>No. LegacyFolio only reads Contacts when you import a person&rsquo;s details. It never changes them. If the details change in Contacts, LegacyFolio can alert you so you can choose which changes to accept. You can turn off these alerts in Settings.</p>
+                    <p>No. LegacyFolio reads the names, phone numbers and email addresses in your Contacts to check whether people you imported or linked have changed. It never changes them. If the details change in Contacts, LegacyFolio can alert you so you can choose which changes to accept. You can turn off these alerts in Settings.</p>
                 </div>
             </section>
-
-            <hr>
 
             <section>
                 <h2>Passwords</h2>
@@ -320,8 +308,6 @@
                 </div>
             </section>
 
-            <hr>
-
             <section>
                 <h2>Your Folio</h2>
 
@@ -348,7 +334,7 @@
                 <div class="faq-item">
                     <h3>How do I share my Folio?</h3>
                     <p>You decide when and how. You can give someone your Folio and its password at the same time, or at different times, or by different methods. For example, you could send quarterly updates of your Folio to your executors or substitute decision-makers, and leave the Folio Password with your lawyer to share when the time comes.</p>
-                    <p>Your Folio is a standard PDF file, so you can share it the same way you share any other file. LegacyFolio shows the approximate size of your Folio before you create it, which can help you choose a method:</p>
+                    <p>Your Folio is a standard PDF file, so you can share it the same way you share any other file. LegacyFolio shows the maximum size of your Folio before you create it, which can help you choose a method:</p>
                     <ul>
                         <li><strong>Email:</strong> Attach your Folio to an email. Most email services limit attachments to about 20&ndash;25&nbsp;MB.</li>
                         <li><strong>Mail Drop:</strong> For larger Folios, Apple Mail can send the file using Mail Drop, which uploads it to iCloud and emails a download link. Files up to 5&nbsp;GB can be sent, and the link expires after 30 days, so ask your recipient to download and save the Folio.</li>
@@ -387,8 +373,6 @@
                 </div>
             </section>
 
-            <hr>
-
             <section>
                 <h2>Sync, Storage, and Archives</h2>
 
@@ -401,7 +385,7 @@
                 <div class="faq-item">
                     <h3>What is an Archive?</h3>
                     <p>An Archive is an encrypted copy of all your LegacyFolio data. An Archive is protected by an Archive Password, and only LegacyFolio can open it. Archive controls are in Settings.</p>
-                    <p>Archives are especially useful if you don&rsquo;t use iCloud sync. Export an Archive to back up your data. Import an Archive to restore your data to LegacyFolio. Importing only adds missing data to LegacyFolio. It never deletes or overwrites what you already have.</p>
+                    <p>Archives are especially useful if you don&rsquo;t use iCloud sync. Export an Archive to back up your data. Import an Archive to restore your data to LegacyFolio. Importing only adds missing records and fills in blank details. It never deletes or overwrites what you already have.</p>
                 </div>
 
                 <div class="faq-item">
@@ -432,8 +416,6 @@
                 </div>
             </section>
 
-            <hr>
-
             <section>
                 <h2>Pricing &amp; Limits</h2>
 
@@ -447,8 +429,6 @@
                     <p>One universal license covers your iPhone, iPad, and Mac.</p>
                 </div>
             </section>
-
-            <hr>
 
             <section>
                 <h2>Support</h2>
