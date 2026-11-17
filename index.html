@@ -58,13 +58,13 @@
         "@type": "Organization",
         "name": "Nekudot Design Limited"
       },
-      "description": "A private and secure way to organize the information, documents, and wishes your substitute decision-makers and executors may need to manage your affairs and estate. LegacyFolio creates a well-organized, password-protected digital document that can be opened in any browser and updated whenever your life changes. LegacyFolio does not store your information on its own servers; your data stays on your devices and, if you choose, in your personal Apple iCloud. One universal license covers iPhone, iPad, and Mac.",
+      "description": "A private and secure way to organize the information, documents, and wishes your agents and executors may need to manage your affairs and estate. LegacyFolio creates a well-organized, password-protected digital document that can be opened in any browser and updated whenever your life changes. LegacyFolio does not store your information on its own servers; your data stays on your devices and, if you choose, in your personal Apple iCloud. One universal license covers iPhone, iPad, and Mac.",
       "featureList": [
         "Private by design",
         "No account required",
         "Password-protected PDF Folio that opens in any browser or PDF reader",
-        "No LegacyFolio cloud and no third-party data storage",
-        "Optional private iCloud sync across iPhone, iPad, and Mac",
+        "No LegacyFolio servers; your data stays on your devices and, if you choose, in your personal Apple iCloud",
+        "Optional iCloud sync across iPhone, iPad, and Mac",
         "Reminders to review your records periodically"
       ],
       "softwareVersion": "1.0",
@@ -355,6 +355,7 @@
         /* --- Testimonials --- */
         .testimonials {
             padding: 80px 0;
+            background-color: var(--bg-light);
         }
 
         .section-header {
@@ -379,7 +380,7 @@
         }
 
         .quote-card {
-            background-color: var(--bg-light);
+            background-color: #ffffff;
             border-radius: 18px;
             border: 1px solid var(--border-color);
             padding: 28px;
@@ -480,7 +481,7 @@
         footer {
             padding: 60px 10% 40px;
             text-align: center;
-            background-color: var(--bg-light);
+            background-color: #ffffff;
         }
 
         .footer-cta { max-width: 700px; margin: 0 auto; }
@@ -543,9 +544,10 @@
         /* Color variables and nav dark styling are in shared.css */
         @media (prefers-color-scheme: dark) {
             body { background-color: #000000; }
-            footer { background-color: var(--bg-light); }
+            footer { background-color: #000000; }
 
             .info-card { --info-card-bg: #000000; }
+            .quote-card { background-color: #000000; }
         }
 
         /* --- REDUCED MOTION SUPPORT --- */
@@ -557,6 +559,92 @@
                 transform: none;
             }
             .store-badge { transition: none; }
+        }
+
+        /* --- Compact comparison matrix --- */
+        .comparison-band {
+            padding: 48px 20px;
+            background-color: #ffffff;
+        }
+        .comparison-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .comparison-heading {
+            margin: 0 0 24px;
+            text-align: center;
+            font-size: 28px;
+            line-height: 1.2;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            text-wrap: balance;
+        }
+        .comparison-table-wrap {
+            overflow-x: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            background: #ffffff;
+            -webkit-overflow-scrolling: touch;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            font-size: 15px;
+            line-height: 1.35;
+        }
+        .comparison-table th,
+        .comparison-table td {
+            padding: 13px 16px;
+            border-bottom: 1px solid var(--border-color);
+            text-align: center;
+            vertical-align: middle;
+        }
+        .comparison-table thead th {
+            font-weight: 600;
+            background: var(--bg-light);
+        }
+        .comparison-table th:first-child,
+        .comparison-table td:first-child {
+            width: 46%;
+            text-align: left;
+        }
+        .comparison-table th:nth-child(2) {
+            background: color-mix(in srgb, var(--apple-blue) 8%, var(--bg-light));
+        }
+        .comparison-table td:nth-child(2) {
+            background: color-mix(in srgb, var(--apple-blue) 8%, #ffffff);
+        }
+        .comparison-table tbody tr:last-child td { border-bottom: 0; }
+        .comparison-table .status {
+            display: inline-block;
+            min-width: 1.2em;
+            font-size: 21px;
+            font-weight: 600;
+            line-height: 1;
+        }
+        .comparison-table .yes { color: #248a3d; }
+        .comparison-table .no { color: #d1242f; }
+        .comparison-table .unknown { color: #b78103; }
+        .comparison-legend .yes { color: #248a3d; font-weight: 600; }
+        .comparison-legend .no { color: #d1242f; font-weight: 600; }
+        .comparison-legend .unknown { color: #b78103; font-weight: 600; }
+        .comparison-legend {
+            margin: 12px 0 0;
+            color: var(--text-secondary);
+            text-align: center;
+            font-size: 13px;
+        }
+        @media (max-width: 640px) {
+            .comparison-band { padding: 40px 8%; }
+            .comparison-heading { font-size: 25px; margin-bottom: 18px; }
+            .comparison-table { min-width: 560px; }
+            .comparison-table th, .comparison-table td { padding: 12px 13px; }
+        }
+        @media (prefers-color-scheme: dark) {
+            .comparison-band { background-color: #000000; }
+            .comparison-table-wrap { background: #000000; }
+            .comparison-table td:nth-child(2) { background: color-mix(in srgb, var(--apple-blue) 8%, #000000); }
         }
     </style>
 </head>
@@ -585,7 +673,7 @@
         <!-- Hero -->
         <section class="hero">
             <div class="hero-content">
-                <h1>Everything they need,<br>when they need it.</h1>
+                <h1>Prepare with care.<br>Share with confidence.</h1>
                 <p><span class="nowrap">A digital legacy binder</span> <span class="nowrap">and end-of-life planner.</span></p>
                 <p class="hero-sub"><span class="nowrap">Private by design.</span> <span class="nowrap">No account required.</span></p>
                 <div class="cta-buttons">
@@ -610,9 +698,9 @@
             <div class="feature-inner">
                 <div class="feature-copy">
                     <h2 class="section-headline">Create your Folio for the people you trust.</h2>
-                    <p>LegacyFolio is a digital legacy binder and end-of-life planner that helps you identify and organize the important information, photos, and documents your substitute decision-makers and executors will need to manage your affairs and estate.</p>
-                    <p class="key-line">Official records. Legal documents. Health and medical information. Finances. Property and business interests. Digital devices and accounts. Final wishes and legacy instructions.</p>
-                    <p>LegacyFolio can gently remind you to keep your records current, and flag records that might be out of date.</p>
+                    <p>LegacyFolio is a digital legacy binder and end-of-life planner that helps you identify and organize the important information, photos, and documents your agents and executors will need to manage your affairs and estate.</p>
+                    <p class="key-line">Official records. Dependents and pets. Legal documents. Health and medical information. Finances. Property and business interests. Digital devices and accounts. Final wishes and legacy instructions.</p>
+                    <p>LegacyFolio can gently remind you to keep your records current, and identify records that are missing basic information or due for review.</p>
                     <p>When you&rsquo;re ready, LegacyFolio creates <span class="emph">your Folio</span>: a well-organized, password-protected digital document that you can share with the people you trust when and how you choose.</p>
                     <p><span class="emph">Your Folio recipients don&rsquo;t need the LegacyFolio app to read your Folio.</span> They can open it using any regular web browser or PDF reader with the password you provide.</p>
                 </div>
@@ -632,7 +720,7 @@
                     <p>You choose what goes in your Folio, including photos and PDF documents.</p>
                     <p>You update and share your Folio as often as you like, with the same password or a different one.</p>
                     <p>You choose when and how to share your Folio and its password, together or separately.</p>
-                    <p>For example, send quarterly Folio updates to your executors, and leave the password with your lawyer until it&rsquo;s needed.</p>
+                    <p>For example, send quarterly Folio updates to your agents or executors, and leave the password with your lawyer until it&rsquo;s needed.</p>
                 </div>
                 <div class="feature-visual">
                     <button type="button" class="gallery-trigger" aria-label="View larger image: Folio password card">
@@ -653,18 +741,89 @@
                 <div class="info-card">
                     <svg class="info-icon" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3" /></svg>
                     <h3>Private by design.</h3>
-                    <p>Your data stays on your devices and, if you choose to sync, in your private Apple iCloud. We never access or store your information, photos, or documents.</p>
+                    <p>Your data stays on your devices and, if you choose to sync, in your personal Apple iCloud. We never access or store your information, photos, documents, or Folios.</p>
                 </div>
                 <div class="info-card">
                     <svg class="info-icon" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                     <h3>Yours to keep.</h3>
-                    <p>Your Folio is a standard, password-protected PDF file. It opens in any web browser or PDF reader, today and years from now, without using the LegacyFolio app.</p>
+                    <p>Your Folio is a standard, password-protected PDF file. It opens in any web browser or PDF reader without using the LegacyFolio app.</p>
                 </div>
                 <div class="info-card">
                     <svg class="info-icon" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V5z" /><path stroke-linecap="round" stroke-linejoin="round" d="M6 20h8M10 17v3" /><rect x="13" y="8" width="7" height="10" rx="1" stroke="currentColor" style="fill:var(--info-card-bg)" /><rect x="18" y="12" width="4" height="7" rx="0.5" stroke="currentColor" style="fill:var(--info-card-bg)" /></svg>
                     <h3>One license, all devices.</h3>
                     <p>One universal license lets you use LegacyFolio on your iPhone, iPad, and Mac.</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- Compact comparison matrix -->
+        <section class="comparison-band" aria-labelledby="comparison-heading">
+            <div class="comparison-inner">
+                <h2 class="comparison-heading" id="comparison-heading">How LegacyFolio compares.</h2>
+                <div class="comparison-table-wrap">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Feature</th>
+                                <th scope="col">LegacyFolio</th>
+                                <th scope="col">Online Services</th>
+                                <th scope="col">Paper Binder</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>No Account Required</td>
+                                <td><span class="status yes" aria-label="Available">✓</span></td>
+                                <td><span class="status no" aria-label="Typically unavailable">✗</span></td>
+                                <td><span class="status yes" aria-label="Available">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td>No Cloud Data Storage Required</td>
+                                <td><span class="status yes" aria-label="Available">✓</span></td>
+                                <td><span class="status no" aria-label="Typically unavailable">✗</span></td>
+                                <td><span class="status yes" aria-label="Available">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td>No Subscription (One-Time Purchase)</td>
+                                <td><span class="status yes" aria-label="Available">✓</span></td>
+                                <td><span class="status no" aria-label="Typically unavailable">✗</span></td>
+                                <td><span class="status yes" aria-label="Available">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td>Easy Electronic Document Attachments</td>
+                                <td><span class="status yes" aria-label="Available">✓</span></td>
+                                <td><span class="status yes" aria-label="Available">✓</span></td>
+                                <td><span class="status no" aria-label="Unavailable">✗</span></td>
+                            </tr>
+                            <tr>
+                                <td>Password-Protected Digital Folio for Agents and Executors</td>
+                                <td><span class="status yes" aria-label="Available">✓</span></td>
+                                <td><span class="status unknown" aria-label="Not documented or varies">?</span></td>
+                                <td><span class="status no" aria-label="Unavailable">✗</span></td>
+                            </tr>
+                            <tr>
+                                <td>Easy Updates</td>
+                                <td><span class="status yes" aria-label="Available">✓</span></td>
+                                <td><span class="status yes" aria-label="Available">✓</span></td>
+                                <td><span class="status no" aria-label="Not inherent to a paper binder">✗</span></td>
+                            </tr>
+                            <tr>
+                                <td>Review Reminders</td>
+                                <td><span class="status yes" aria-label="Available">✓</span></td>
+                                <td><span class="status unknown" aria-label="Not documented or varies">?</span></td>
+                                <td><span class="status no" aria-label="Not inherent to a paper binder">✗</span></td>
+                            </tr>
+                            <tr>
+                                <td>Standard PDF Folio — No App Required to Open</td>
+                                <td><span class="status yes" aria-label="Available">✓</span></td>
+                                <td><span class="status unknown" aria-label="Not documented or varies">?</span></td>
+                                <td><span class="status no" aria-label="Not applicable to a paper binder">✗</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="comparison-legend"><span class="yes">✓</span> Available &nbsp;&nbsp; <span class="no">✗</span> Not available &nbsp;&nbsp; <span class="unknown">?</span> Not documented or varies*</p>
+                <p class="comparison-legend">*Based on typical online legacy binder services, reviewed November 2026; features vary by provider.</p>
             </div>
         </section>
 
@@ -694,7 +853,7 @@
     <footer>
         <div class="footer-cta">
             <h2>Create a simple Folio for free.</h2>
-            <p>Use LegacyFolio to create a Folio with up to 10 records, free for as long as you like.</p>
+            <p>Use LegacyFolio free for up to 10 records, for as long as you like.</p>
             <p>Purchase a one-time license to remove the record limit. No annual fee.</p>
             <div class="cta-buttons">
                 <a href="#" aria-label="Download free on the App Store">
