@@ -291,6 +291,9 @@
             border: 1px solid var(--border-color);
         }
 
+        /* Folio image: white square behind the transparent image (light mode; black in dark mode, see the dark mode block) */
+        #folio .feature-image { background-color: #ffffff; }
+
         /* The password card image has a wide transparent margin, so it is
            scaled up inside its frame, and the frame is drawn on the wrapper. */
         .paper-texture-wrapper.framed {
@@ -546,6 +549,8 @@
         @media (prefers-color-scheme: dark) {
             body { background-color: #000000; }
             footer { background-color: #000000; }
+
+            #folio .feature-image { background-color: #000000; }
 
             .info-card { --info-card-bg: #000000; }
             .quote-card { background-color: #000000; }
